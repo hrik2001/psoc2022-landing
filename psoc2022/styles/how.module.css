@@ -31,19 +31,46 @@
 }
 
 .media {
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     border-radius: 22%;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.catInfo {
+    width: 70%;
+    text-align: center;
+    position: relative;
     background-color: #ffffff;
-
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+    opacity: 0;
+    transition: all 1s ease;
+    color: #246D96;
+}
+  
+.cat {
+    position: relative;
+    bottom: 225px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #246D96;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
-.cat{
-    position: absolute;
-
+.element:hover .media {
+    transform: scale(1.1);
 }
-
-.photo {
-    left: 152.24px;
-    top: 2220.44px;
+  
+.element:hover .cat {
+    font-weight: bold;
+}
+  
+.element:hover .catInfo {
+    opacity: 1;
 }

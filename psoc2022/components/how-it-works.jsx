@@ -9,12 +9,12 @@ const How = ({ how }) => {
             <div className={styles.how}>
                 {how.map((element)=>(
                         <div className={styles.element}>
-                            <div className={styles.catInfo}>{element.desc}</div>
-                            <span className={styles.cat}>{element.title}</span>
                             <div className={styles.media}>
                                 <Image src={`/img/${element.photo}`} width='52.71px' height='50px' layout= 'fixed'
                                 alt=''/>
                             </div>
+                            <span className={styles.cat}>{element.title}</span>
+                            <div className={styles.catInfo}>{element.desc}</div>
                         </div>
                 ))}
             </div>
