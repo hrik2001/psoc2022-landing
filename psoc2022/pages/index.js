@@ -5,6 +5,7 @@ import Intro from '../components/intro'
 import How from '../components/how-it-works'
 import { how_it_works } from '../how_it_works'
 import Testimonial from '../components/testimonials'
+import About from '../components/about'
 
 
 export default function Home({how}) {
@@ -16,8 +17,9 @@ export default function Home({how}) {
         <meta name="description" content="PClub Summer Of Code" />
       </Head>
       <Intro/>
-      <How how={how}/>
+      <About/>
       <Testimonial/>
+      <How how={how}/>
     </div>
   )
 }

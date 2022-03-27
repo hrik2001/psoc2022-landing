@@ -34,3 +34,19 @@
     margin: 0;
     line-height: 90px;
 }
+
+.sponsors {
+    font-size: 24px;
+    line-height: 29px;
+    color: #24487E;
+}
+
+.listItem {
+    display: inline;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.list{
+    padding: 0;
+}

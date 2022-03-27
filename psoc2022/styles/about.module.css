@@ -1,0 +1,49 @@
+.container {
+    top: 0;
+    width: 100%;
+    height: calc(60vh - 50px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.stats {
+    flex: 1;
+    background: #246D96;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats h1{
+    position: relative;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    vertical-align: initial;
+}
+
+.card {
+    flex: 1;
+    color: #24487E;
+    background: #E8F2F6;
+}
+
+.decription p{
+    font-size: 40px;
+    line-height: 31px;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
