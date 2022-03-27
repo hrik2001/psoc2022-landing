@@ -1,4 +1,3 @@
-
 export const how_it_works = [
     {
         id: 1,

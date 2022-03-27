@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Intro from '../components/intro'
 import How from '../components/how-it-works'
 import { how_it_works } from '../how_it_works'
+import Testimonial from '../components/testimonials'
 
 
 export default function Home({how}) {
@@ -16,6 +17,7 @@ export default function Home({how}) {
       </Head>
       <Intro/>
       <How how={how}/>
+      <Testimonial/>
     </div>
   )
 }
