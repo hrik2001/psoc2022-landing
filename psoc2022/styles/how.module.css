@@ -1,0 +1,49 @@
+.container {
+    padding: 0;
+    background-color: #E8F2F6;
+    box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #24487E;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.element {
+    width: 450px;
+    height: 450px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.how {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.media {
+    width: 85%;
+    height: 85%;
+    border-radius: 22%;
+    background-color: #ffffff;
+
+}
+
+.cat{
+    position: absolute;
+
+}
+
+.photo {
+    left: 152.24px;
+    top: 2220.44px;
+}
