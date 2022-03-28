@@ -7,6 +7,7 @@ import { how_it_works } from '../how_it_works'
 import Testimonial from '../components/testimonials'
 import About from '../components/about'
 import Projects from '../components/projects'
+import Team from '../components/team'
 
 
 export default function Home({how}) {
@@ -22,6 +23,7 @@ export default function Home({how}) {
       <Testimonial/>
       <How how={how}/>
       <Projects/>
+      <Team/>
     </div>
   )
 }

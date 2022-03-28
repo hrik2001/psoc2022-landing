@@ -1,0 +1,21 @@
+.container{
+    height: 100px;
+    background-color: #246D96;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    font-size: 18px;
+    position: sticky;
+}
+
+.listItem {
+    display: inline;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 40px;
+}

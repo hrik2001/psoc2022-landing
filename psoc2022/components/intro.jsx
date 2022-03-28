@@ -25,7 +25,7 @@ const Intro = () => {
                     </ul>
                 </div>
                 <div className={styles.card}>
-                    <Image src="/img/pair-programming.svg" width="80%" height="80%" layout='fill' alt=""/>
+                    <Image src="/img/pair-programming.svg" width="100%" height="100%" layout='fill' alt=""/>
                 </div>
         </div>
     )
