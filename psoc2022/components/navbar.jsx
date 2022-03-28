@@ -13,7 +13,7 @@ const Navbar = () => {
                 <Link href='/product/Timeline'>Timeline</Link>
                 </li>
                 <li className={styles.listItem}>
-                <Link href='/product/Login'>Login</Link>
+                <Link href='/login'>Login</Link>
                 </li>
             </ul>
         </div>

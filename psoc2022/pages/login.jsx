@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 const Login = () => {
     return(
@@ -7,7 +8,7 @@ const Login = () => {
                 <title>PSOC 2022</title>
                 <meta name="description" content="PClub Summer Of Code login page" />
             </Head>
-            <h1>This is Login page.</h1>
+            <Image src='/img/coding.svg' height="500px" width="500px" layout='fixed' alt=''/>
         </div>
     )
 }

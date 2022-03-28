@@ -6,6 +6,7 @@ import How from '../components/how-it-works'
 import { how_it_works } from '../how_it_works'
 import Testimonial from '../components/testimonials'
 import About from '../components/about'
+import Projects from '../components/projects'
 
 
 export default function Home({how}) {
@@ -20,6 +21,7 @@ export default function Home({how}) {
       <About/>
       <Testimonial/>
       <How how={how}/>
+      <Projects/>
     </div>
   )
 }
