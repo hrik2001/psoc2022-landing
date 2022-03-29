@@ -15,7 +15,6 @@ export default function Home({how}) {
     <div>
       <Head>
         <title>PSOC 2022</title>
-        <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"></link>
         <meta name="description" content="PClub Summer Of Code" />
       </Head>
       <Intro/>

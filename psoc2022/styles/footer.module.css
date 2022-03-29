@@ -1,21 +1,36 @@
 .container{
-    height: 100px;
+    height: 120px;
     background-color: #246D96;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0 100px;
-    font-size: 18px;
-    position: sticky;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: auto;
 }
 
 .listItem {
     display: inline;
     margin-right: 30px;
     font-size: 14px;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    align-items: center;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.pclub{
+    margin: 0;
+    text-align: center;
 }
