@@ -1,13 +1,26 @@
-.container{
+.container {
     top: 0;
     width: 100%;
     height: calc(100vh - 50px);
-    background-image: linear-gradient(0.5deg, #3192CA 12.81%, #24487E 59.29%);
+    background-image: linear-gradient(0.5deg, #3192ca 12.81%, #24487e 59.29%);
     color: white;
     display: flex;
+    flex-direction: column;
     box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
+}
+
+.navcontainer {
+    height: 50px;
+    background-color: rgba(173, 216, 230, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    font-size: 18px;
+    position: sticky;
 }
 .card {
     flex: 1;
@@ -19,7 +32,7 @@
     position: relative;
 }
 
-.description{
+.description {
     font-style: normal;
     font-weight: 300;
     font-size: 34px;
@@ -27,7 +40,7 @@
     margin: 0;
 }
 
-.title{
+.title {
     font-style: bold;
     font-weight: 600;
     font-size: 80px;
@@ -38,7 +51,7 @@
 .sponsors {
     font-size: 24px;
     line-height: 29px;
-    color: #24487E;
+    color: #24487e;
 }
 
 .listItem {
@@ -47,6 +60,6 @@
     font-size: 14px;
 }
 
-.list{
+.list {
     padding: 0;
 }

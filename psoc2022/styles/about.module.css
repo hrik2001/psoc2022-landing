@@ -9,33 +9,42 @@
 
 .stats {
     flex: 1;
-    background: #246D96;
+    background: #246d96;
     color: white;
     font-size: 20px;
     display: flex;
     position: relative;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.stats h1{
-    position: relative;
-    margin: 0;
+.stat {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    vertical-align: initial;
+}
+
+.stats h1 {
+    margin-left: 20%;
+    /* position: relative; */
+    /* margin: 0; */
+    /* display: inline; */
+
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    /* vertical-align: initial; */
 }
 
 .card {
     flex: 1;
-    color: #24487E;
-    background: #E8F2F6;
+    color: #24487e;
+    background: #e8f2f6;
 }
 
-.decription p{
-    font-size: 40px;
+.description {
+    font-size: 25px;
     line-height: 31px;
     margin: 20px;
     font-weight: 400;

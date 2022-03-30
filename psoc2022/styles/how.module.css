@@ -1,6 +1,6 @@
 .container {
     padding: 0;
-    background-color: #E8F2F6;
+    background-color: #e8f2f6;
     overflow: hidden;
     box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
     height: 90vh;
@@ -11,7 +11,7 @@
     font-weight: 600;
     font-size: 70px;
     line-height: 85px;
-    color: #24487E;
+    color: #24487e;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -32,46 +32,55 @@
 }
 
 .media {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     background-color: white;
-    border-radius: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    border-radius: 11%;
     overflow: hidden;
     transition: all 1s ease;
 }
 
 .catInfo {
-    width: 70%;
+    width: 100%;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     z-index: 999;
     opacity: 0;
     transition: all 1s ease;
-    color: #246D96;
-}
-  
-.cat {
-    position: relative;
-    bottom: 225px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #246D96;
-    letter-spacing: 5px;
-    font-weight: 300;
-    font-size: 30px;
+    color: #246d96;
 }
 
+.cat {
+    position: relative;
+    /* bottom: 20px; */
+    margin-left: 10%;
+    text-transform: uppercase;
+    /* text-align: center; */
+    color: #246d96;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.pic {
+    margin-top: 20%;
+    margin-left: 10%;
+}
 .element:hover .media {
     transform: scale(1.1);
 }
-  
+
 .element:hover .cat {
     font-weight: bold;
 }
-  
+
 .element:hover .catInfo {
     opacity: 1;
 }
