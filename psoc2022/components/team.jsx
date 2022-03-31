@@ -38,9 +38,11 @@ const Team = () => {
                                 className="rounded-circle"
                             />
                             <CardBody>
-                                <CardTitle tag="h5">{item.name}</CardTitle>
+                                <CardTitle tag="h5" className="text-center">
+                                    {item.name}
+                                </CardTitle>
                                 <CardSubtitle
-                                    className="mb-2 text-muted"
+                                    className="mb-2 text-muted text-center"
                                     tag="h6"
                                 >
                                     {item.title}

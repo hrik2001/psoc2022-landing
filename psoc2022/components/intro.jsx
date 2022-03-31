@@ -13,7 +13,9 @@ const Intro = () => {
                     layout="fixed"
                     alt=""
                 />
-                <Link href="/">PClub Summer Of Code</Link>
+                <Link href="/" className={styles.heading}>
+                    PClub Summer Of Code
+                </Link>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
                         <Link href="/product/Team">Team</Link>
@@ -26,59 +28,70 @@ const Intro = () => {
                     </li>
                 </ul>
             </div>
-            <div className={styles.card}>
-                <h1 className={styles.title}>PClub Summer Of Code</h1>
-                <p className={styles.description}>
-                    Your first open source contribution is on us.
-                </p>
-                <p className={styles.sponsors}>Previous PSoC sponsors</p>
-                <ul className={styles.list}>
-                    <li className={styles.listItem}>
-                        <Image
-                            src="/img/girl-script.png"
-                            height="60px;"
-                            width="60px;"
-                            layout="fixed"
-                            alt=""
+            <div className={styles.introcontent}>
+                <div className={styles.card}>
+                    <h1 className={styles.title}>PClub Summer Of Code</h1>
+                    <p className={styles.description}>
+                        Your first open source contribution is on us.
+                    </p>
+                    <div className={styles.emailgroup}>
+                        <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            className={styles.email}
                         />
-                    </li>
-                    <li className={styles.listItem}>
-                        <Image
-                            src="/img/balsamiq.png"
-                            height="60px;"
-                            width="60px;"
-                            layout="fixed"
-                            alt=""
-                        />
-                    </li>
-                    <li className={styles.listItem}>
-                        <Image
-                            src="/img/bugsee.png"
-                            height="60px;"
-                            width="60px;"
-                            layout="fixed"
-                            alt=""
-                        />
-                    </li>
-                    <li className={styles.listItem}>
-                        <Image
-                            src="/img/internwell.png"
-                            height="60px;"
-                            width="60px;"
-                            layout="fixed"
-                            alt=""
-                        />
-                    </li>
-                </ul>
-            </div>
-            <div className={styles.card}>
-                <Image
-                    src="/img/pair-programming.svg"
-                    width="100%"
-                    height="100%"
-                    layout="fill"
-                    alt=""
-                />
+                        <button className={styles.emailbutton}>Go!</button>
+                    </div>
+                    <p className={styles.sponsors}>Previous PSoC sponsors</p>
+                    <ul className={styles.list}>
+                        <li className={styles.listItem}>
+                            <Image
+                                src="/img/girl-script.png"
+                                height="60px;"
+                                width="60px;"
+                                layout="fixed"
+                                alt=""
+                            />
+                        </li>
+                        <li className={styles.listItem}>
+                            <Image
+                                src="/img/balsamiq.png"
+                                height="60px;"
+                                width="60px;"
+                                layout="fixed"
+                                alt=""
+                            />
+                        </li>
+                        <li className={styles.listItem}>
+                            <Image
+                                src="/img/bugsee.png"
+                                height="60px;"
+                                width="60px;"
+                                layout="fixed"
+                                alt=""
+                            />
+                        </li>
+                        <li className={styles.listItem}>
+                            <Image
+                                src="/img/internwell.png"
+                                height="60px;"
+                                width="60px;"
+                                layout="fixed"
+                                alt=""
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div className={styles.card}>
+                    <Image
+                        src="/img/pair-programming.svg"
+                        width="100%"
+                        height="100%"
+                        layout="fill"
+                        alt=""
+                    />
+                </div>
             </div>
         </div>
     );
