@@ -8,14 +8,12 @@ const Intro = () => {
             <div className={styles.navcontainer}>
                 <Image
                     src="/img/psoc-logo-1.png"
-                    width="40px"
-                    height="40px"
+                    width="70px"
+                    height="70px"
                     layout="fixed"
                     alt=""
+                    className={styles.navlogo}
                 />
-                <Link href="/" className={styles.heading}>
-                    PClub Summer Of Code
-                </Link>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
                         <Link href="/product/Team">Team</Link>
