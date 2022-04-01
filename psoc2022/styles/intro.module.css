@@ -32,7 +32,6 @@
     font-size: 24px;
 }
 
-
 .card {
     flex: 1;
     padding: 100px;
@@ -88,6 +87,7 @@
     height: 40px;
     margin-top: 25px;
     margin-bottom: 25px;
+    padding: 0px 10px;
 }
 .emailbutton {
     border-radius: 20px;

@@ -46,8 +46,8 @@ const Intro = () => {
                         <li className={styles.listItem}>
                             <Image
                                 src="/img/girl-script.png"
-                                height="60px;"
-                                width="60px;"
+                                height="100px;"
+                                width="100px;"
                                 layout="fixed"
                                 alt=""
                             />
@@ -55,8 +55,8 @@ const Intro = () => {
                         <li className={styles.listItem}>
                             <Image
                                 src="/img/balsamiq.png"
-                                height="60px;"
-                                width="60px;"
+                                height="100px;"
+                                width="100px;"
                                 layout="fixed"
                                 alt=""
                             />
@@ -64,8 +64,8 @@ const Intro = () => {
                         <li className={styles.listItem}>
                             <Image
                                 src="/img/bugsee.png"
-                                height="60px;"
-                                width="60px;"
+                                height="100px;"
+                                width="100px;"
                                 layout="fixed"
                                 alt=""
                             />
@@ -73,8 +73,8 @@ const Intro = () => {
                         <li className={styles.listItem}>
                             <Image
                                 src="/img/internwell.png"
-                                height="60px;"
-                                width="60px;"
+                                height="100px;"
+                                width="100px;"
                                 layout="fixed"
                                 alt=""
                             />

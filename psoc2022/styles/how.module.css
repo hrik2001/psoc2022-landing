@@ -52,7 +52,7 @@
     padding: 20px;
     border-radius: 10px;
     z-index: 999;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 1s ease;
     color: #246d96;
 }
@@ -73,14 +73,16 @@
     margin-top: 20%;
     margin-left: 10%;
 }
+.know {
+    margin-left: 5%;
+    font-weight: 1000;
+    color: #24487e;
+    transform: translateY(-20px);
+}
 .element:hover .media {
     transform: scale(1.1);
 }
 
 .element:hover .cat {
     font-weight: bold;
-}
-
-.element:hover .catInfo {
-    opacity: 1;
 }

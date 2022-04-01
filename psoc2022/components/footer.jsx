@@ -49,14 +49,15 @@ const Footer = () => {
                 ))}
             </ul>
             <h5 className={styles.pclub}>
-                Made with ♥️ by{" "}
-                <Image
+                Made with ♥️ by{"  "}
+                <img
                     src="/img/pclub-logo.png"
+                    alt=""
+                    srcset=""
                     height="50px"
                     width="50px"
-                    layout="fixed"
-                    alt=""
-                />{" "}
+                    className={styles.footerimage}
+                />
                 .
             </h5>
         </div>

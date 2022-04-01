@@ -26,15 +26,9 @@
 }
 
 .stats h1 {
-    margin-left: 20%;
-    /* position: relative; */
-    /* margin: 0; */
-    /* display: inline; */
-
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    /* flex-wrap: wrap; */
-    /* vertical-align: initial; */
+    text-align: left;
+    width: auto;
+    margin: auto;
 }
 
 .card {

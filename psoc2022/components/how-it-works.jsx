@@ -48,6 +48,9 @@ const How = ({ how }) => {
                     </div>
                 ))}
             </div>
+            <a href="#">
+                <h1 className={styles.know}>Know more{" >"}</h1>
+            </a>
         </div>
     );
 };
