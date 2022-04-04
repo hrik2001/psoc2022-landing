@@ -21,6 +21,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     height: 350px;
 }
+
+.col {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .subtitle {
     margin-bottom: 5px;
     color: #24487e;
@@ -28,4 +34,31 @@
 .title {
     color: #24487e;
     margin-top: 50px;
+}
+
+@media (max-width: 460px) {
+    .card {
+        width: 45vh;
+        /* display: inline-block; */
+        margin: 0;
+        display: flex;
+        height: auto;
+        /* margin-right: 500px; */
+        /* margin-right: 1px; */
+        /* padding-left: 50px; */
+        /* margin-left: 0 !important; */
+        /* margin-right: 0 !important; */
+    }
+    .subtitle {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .col {
+        padding-top: 0;
+        padding-right: 0;
+        width: fit-content;
+        margin-right: 0;
+        /* margin-right: 500px; */
+    }
+    /*  */
 }

@@ -26,22 +26,54 @@
     .title {
         font-size: 40px;
     }
+    .card {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 0;
+        /* height: ; */
+        /* margin-bottom: 5px; */
+    }
 }
 
 .comma {
-    font-size: 100px;
+    /* font-size: 100px; */
     font-family: cursive;
     text-align: center;
     margin: 0;
-    color: rgba(36, 72, 126, 0.5);
+    color: #24487e80;
+    padding: 4%;
 }
-
+.commasvg {
+    width: 48px;
+    height: 48px;
+    color: #24487e80;
+    /* padding: 5%; */
+    /* padding-top: 5%; */
+}
 .comment {
     margin-top: 0;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: #24487e;
+}
+
+@media (max-width: 460px) {
+    .comment {
+        font-size: 20px;
+        display: inline;
+        /* margin */
+        /* color: red; */
+    }
+    .commasvg {
+        width: 36px;
+        height: 36px;
+    }
+    .comma {
+        /* display: inline; */
+        padding: none;
+    }
 }
 
 .name {

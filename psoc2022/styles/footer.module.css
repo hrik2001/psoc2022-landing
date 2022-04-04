@@ -60,3 +60,38 @@
     text-align: center;
     margin-top: 1%;
 }
+
+@media (max-width: 460px) {
+    .container {
+        padding: 0;
+    }
+    .socials_item {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        text-align: left;
+        width: 350px;
+        margin: auto;
+        /* padding-left: 0; */
+    }
+    .list {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .socials_item {
+        /* display: block; */
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        justify-content: center;
+
+        /* text-align: center; */
+        /* justify-content: flex-start; */
+    }
+    .listItem {
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+}

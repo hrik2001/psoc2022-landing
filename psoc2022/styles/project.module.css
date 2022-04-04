@@ -32,3 +32,12 @@
     /* top: 129px; */
     left: 0;
 }
+
+@media (max-width: 460px) {
+    .container {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 40px;
+    }
+}

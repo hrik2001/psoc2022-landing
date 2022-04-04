@@ -86,3 +86,36 @@
 .element:hover .cat {
     font-weight: bold;
 }
+@media (max-width: 460px) {
+    .title {
+        font-size: 40px;
+    }
+    .container {
+        height: auto;
+        width: fit-content;
+    }
+    .how {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .element {
+        height: auto;
+        width: auto;
+        /* margin: auto; */
+        /* margin-left: 50px; */
+        /* padding: ; */
+    }
+    .media {
+        margin: 0;
+        width: fit-content;
+    }
+    .know {
+        text-align: center;
+        margin: 10%;
+    }
+    /* .media {
+        width: 100%;
+        margin-right: 0;
+    } */
+}

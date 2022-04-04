@@ -28,7 +28,7 @@ const Team = () => {
             <h2 className={styles.subtitle}>Meet the guys who make it work!</h2>
             <Row className={styles.card_container}>
                 {team.map((item) => (
-                    <Col className="py-5">
+                    <Col className={styles.col}>
                         <Card className={styles.card}>
                             <CardImg
                                 alt="Card image cap"
@@ -47,12 +47,6 @@ const Team = () => {
                                 >
                                     {item.title}
                                 </CardSubtitle>
-                                {/* <CardText>
-                                This is a wider card with supporting text below as a
-                                natural lead-in to additional content. This content
-                                is a little bit longer.
-                            </CardText> */}
-                                {/* <Button>Button</Button> */}
                             </CardBody>
                         </Card>
                     </Col>

@@ -13,7 +13,7 @@
     }
 }
 .stats {
-    flex: 1;
+    /* flex: 1; */
     background: #246d96;
     color: white;
     font-size: 20px;
@@ -23,6 +23,20 @@
     flex-direction: column;
     justify-content: space-around;
     /* align-items: center; */
+}
+
+@media (max-width: 460px) {
+    .stats {
+        height: 300px;
+    }
+    /* .stat {
+        margin-left: 30px;
+    } */
+    #stat2 {
+        /* transform: translateX(-50px); */
+        margin: 0 !important;
+        transform: translateX(-4%);
+    }
 }
 
 .stat {

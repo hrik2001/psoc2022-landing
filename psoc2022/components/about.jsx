@@ -31,7 +31,7 @@ const About = () => {
                     </h1>
                 </div>
                 {/* <br /> */}
-                <div className={styles.stat}>
+                <div className={styles.stat} id={styles.stat2}>
                     <h1>
                         19+
                         <br />
