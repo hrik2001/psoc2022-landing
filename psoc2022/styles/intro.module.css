@@ -58,6 +58,40 @@
     line-height: 90px;
 }
 
+@media (max-width: 460px) {
+    .title {
+        font-size: 60px;
+        text-align: center;
+    }
+    .navlogo {
+        display: none;
+    }
+    .container {
+        height: fit-content;
+    }
+    #introlist {
+        margin-left: 50px;
+    }
+    .navcontainer {
+        padding-left: 0;
+    }
+    .introcontent {
+        text-align: center;
+        width: auto;
+        margin: auto;
+    }
+    #idek {
+        display: none;
+    }
+    .sponsors {
+        margin-top: 10%;
+        /* padding-bottom: 0; */
+    }
+    .card {
+        padding-bottom: 0;
+    }
+}
+
 .sponsors {
     font-size: 24px;
     line-height: 29px;

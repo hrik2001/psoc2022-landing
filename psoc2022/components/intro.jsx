@@ -14,7 +14,7 @@ const Intro = () => {
                     alt=""
                     className={styles.navlogo}
                 />
-                <ul className={styles.list}>
+                <ul className={styles.list} id={styles.introlist}>
                     <li className={styles.listItem}>
                         <Link href="/product/Team">Team</Link>
                     </li>
@@ -81,13 +81,14 @@ const Intro = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} id={styles.idek}>
                     <Image
                         src="/img/pair-programming.svg"
                         width="100%"
                         height="100%"
                         layout="fill"
                         alt=""
+                        className={styles.pairimage}
                     />
                 </div>
             </div>

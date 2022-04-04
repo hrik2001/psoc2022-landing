@@ -6,7 +6,12 @@
     position: relative;
     display: flex;
 }
-
+@media (max-width: 460px) {
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
 .stats {
     flex: 1;
     background: #246d96;

@@ -8,7 +8,7 @@
 
 .card {
     width: 64%;
-    background: #E8F2F6;
+    background: #e8f2f6;
     border-radius: 45px;
     align-items: center;
     margin: auto;
@@ -20,7 +20,12 @@
     line-height: 85px;
     text-align: center;
     margin: 0;
-    color: #24487E;
+    color: #24487e;
+}
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px;
+    }
 }
 
 .comma {
@@ -31,24 +36,23 @@
     color: rgba(36, 72, 126, 0.5);
 }
 
-.comment{
+.comment {
     margin-top: 0;
     font-size: 24px;
     line-height: 29px;
-    text-align: center; 
-    color: #24487E;
+    text-align: center;
+    color: #24487e;
 }
 
-.name{
+.name {
     margin-bottom: 0;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: rgba(36, 72, 126, 0.5);
-
 }
 
-.post{
+.post {
     margin-top: 0;
     font-size: 24px;
     line-height: 29px;
