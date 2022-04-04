@@ -40,7 +40,7 @@
     .card {
         width: 45vh;
         /* display: inline-block; */
-        margin: 0;
+        margin: auto;
         display: flex;
         height: auto;
         /* margin-right: 500px; */
