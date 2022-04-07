@@ -25,7 +25,9 @@ const Team = () => {
         <div className={styles.container}>
             <h1 className={styles.title}>The Team</h1>
             <hr />
-            <h2 className={styles.subtitle}>Meet the guys who make it work!</h2>
+            <h2 className={styles.subtitle}>
+                Meet the people who make it work!
+            </h2>
             <Row className={styles.card_container}>
                 {team.map((item) => (
                     <Col className={styles.col}>
