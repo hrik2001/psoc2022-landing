@@ -41,7 +41,7 @@ const Intro = () => {
                         />
                         <button className={styles.emailbutton}>Go!</button>
                     </div>
-                    <p className={styles.sponsors}>Previous PSoC sponsors</p>
+                    <p className={styles.sponsors}>Previous PSOC sponsors</p>
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
                             <Image
