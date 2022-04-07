@@ -1,8 +1,9 @@
-.container{
+.container {
     height: 50px;
     background-color: lightblue;
     color: white;
-    display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
@@ -15,4 +16,3 @@
     margin-right: 30px;
     font-size: 14px;
 }
-
