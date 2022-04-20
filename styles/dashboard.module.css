@@ -1,0 +1,23 @@
+.navbar {
+    height: 10vh;
+    background-color: #25497F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    font-size: 18px;
+    position: sticky;
+    font-size: 24px;
+}
+.listItem {
+    display: inline;
+    margin-right: 30px;
+    font-size: 24px;
+    color: azure;
+}
+
+.list {
+    padding: 0;
+    font-size: 24px;
+}
