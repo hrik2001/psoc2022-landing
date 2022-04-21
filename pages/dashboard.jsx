@@ -6,7 +6,7 @@ import { Button } from 'bootstrap';
 
 const dashboard = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.navbar}>
                 <Image
                         src="/img/psoc-logo-1.png"
@@ -16,21 +16,14 @@ const dashboard = () => {
                         alt=""
                         className={styles.navlogo}
                 />
-                <ul className={styles.list} id={styles.introlist}>
-                    <li className={styles.listItem}>
-                        <Link href="/profile">Profile</Link>
-                    </li>
-                    <li className={styles.listItem}>
-                        <Image
-                            src="/img/profile.png"
-                            width="70px"
-                            height="70px"
-                            layout="fixed"
-                            alt=""
-                            className={styles.profilelogo}
-                        />
-                    </li>
-                </ul>
+                <Image
+                    src="/img/profile.png"
+                    width="70px"
+                    height="70px"
+                    layout="fixed"                            
+                    alt=""
+                    className={styles.profilelogo}
+                />
             </div>
             <h1 className={styles.title}>Dashboard</h1>
         </div>
