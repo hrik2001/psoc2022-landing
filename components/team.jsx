@@ -28,31 +28,21 @@ const Team = () => {
             <h2 className={styles.subtitle}>
                 Meet the people who make it work!
             </h2>
-            <Row className={styles.card_container}>
-                {team.map((item) => (
-                    <Col className={styles.col}>
-                        <Card className={styles.card}>
-                            <CardImg
-                                alt="Card image cap"
-                                src="https://i.imgur.com/MBkP9hM.png"
-                                // top
-                                width="50px"
-                                className="rounded-circle"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5" className="text-center">
-                                    {item.name}
-                                </CardTitle>
-                                <CardSubtitle
-                                    className="mb-2 text-muted text-center"
-                                    tag="h6"
-                                >
-                                    {item.title}
-                                </CardSubtitle>
-                            </CardBody>
-                        </Card>
+            
+            <Row className={styles.members}>
+                {team.map(s => (
+                    <Col style={{maxWidth:"50%"}} className={styles.membercol}>
+                    <div className={styles.member}>
+                        <img src="https://i.imgur.com/MBkP9hM.png" alt="Limbo hack"></img>
+                        <div className={styles.memberslink}>
+                            <h3>{s.name}</h3>
+                        </div>
+                    </div>
+                    {/* <Member name={s.Name} role={s.role} img={s.img} /> */}
                     </Col>
                 ))}
+             
+            {/* </div> */}
             </Row>
         </div>
     );

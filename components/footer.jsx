@@ -28,7 +28,7 @@ const socials = [
 const Footer = () => {
     return (
         <div className={styles.container}>
-            <h4 className={styles.title}>Connect With us!</h4>
+            {/* <h4 className={styles.title}>Connect With us!</h4> */}
             <ul className={styles.list}>
                 {socials.map((item) => (
                     <li className={styles.listItem}>

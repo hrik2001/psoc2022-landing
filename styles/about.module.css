@@ -1,24 +1,20 @@
 .container {
+    display: flex;
+    flex-direction: row;
     top: 0;
     width: 100%;
     height: calc(60vh - 50px);
-    overflow: hidden;
-    position: relative;
-    display: flex;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-@media (max-width: 460px) {
-    .container {
-        flex-direction: column;
-        height: fit-content;
-    }
-}
 .stats {
     /* flex: 1; */
+    width: 50%;
     background: #246d96;
     color: white;
     font-size: 20px;
@@ -31,6 +27,10 @@
 }
 
 @media (max-width: 460px) {
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
     .stats {
         height: 300px;
     }
