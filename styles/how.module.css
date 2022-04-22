@@ -100,21 +100,14 @@
         align-items: center;
     }
     .element {
-        /* height: auto;
-        width: auto; */
-        display: flex;
+        height: auto;
+        width: auto;
         /* margin: auto; */
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        /* padding-left: 15%; */
         /* margin-left: 50px; */
         /* padding: ; */
     }
     .media {
-        /* margin-left: 50px; */
-
-        /* margin-left: 50px; */
+        margin: 0;
         width: fit-content;
     }
     .know {
