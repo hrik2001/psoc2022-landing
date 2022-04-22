@@ -37,17 +37,19 @@
 }
 
 @media (max-width: 460px) {
+    .card_container{
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
     .card {
-        width: 45vh;
-        /* display: inline-block; */
-        margin: auto;
-        display: flex;
+        width: 40vh;
+        margin-left: none;
+
+        /* margin: none !important; */
         height: auto;
-        /* margin-right: 500px; */
-        /* margin-right: 1px; */
-        /* padding-left: 50px; */
-        /* margin-left: 0 !important; */
-        /* margin-right: 0 !important; */
+        transform: translateX(-8%);
+        margin-bottom: 10%;
     }
     .subtitle {
         margin-bottom: 50px;
@@ -58,7 +60,6 @@
         padding-right: 0;
         width: fit-content;
         margin-right: 0;
-        /* margin-right: 500px; */
     }
     /*  */
 }

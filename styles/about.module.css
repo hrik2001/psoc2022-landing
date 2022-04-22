@@ -6,6 +6,11 @@
     position: relative;
     display: flex;
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @media (max-width: 460px) {
     .container {
         flex-direction: column;
