@@ -16,10 +16,10 @@ const Intro = () => {
                 />
                 <ul className={styles.list} id={styles.introlist}>
                     <li className={styles.listItem}>
-                        <Link href="/product/Team">Team</Link>
+                        <Link href="/">Team</Link>
                     </li>
                     <li className={styles.listItem}>
-                        <Link href="/product/Timeline">Timeline</Link>
+                        <Link href="timeline">Timeline</Link>
                     </li>
                     <li className={styles.listItem}>
                         <Link href="/login">Login</Link>
