@@ -10,14 +10,15 @@ import {
     CardImg,
     Col,
     Row,
+    NavItem,
 } from "reactstrap";
 
 const team = [
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { src:"img/Shatabarto Bhattacharya.jpg", name: "Shatabarto Bhattacharya", title: "Some title", linkedin: "google.com" },
+    { src:"img/Ritvik.jpg", name: "Ritvik", title: "Some title", linkedin: "google.com" },    
+    { src:"img/ Aditi  Shandyal.jpg", name: "Aditi Shandyal", title: "Some title", linkedin: "google.com" },    
+    { src:"img/Abhiroop Singh.jpg", name: "Abhiroop Singh", title: "Some title", linkedin: "google.com" },    
+    { src:"img/Meghna Thakur.png", name: "Meghna Thakur", title: "Some title", linkedin: "google.com" },
 ];
 
 const Team = () => {
@@ -33,7 +34,7 @@ const Team = () => {
                 {team.map(s => (
                     <Col style={{maxWidth:"50%"}} className={styles.membercol}>
                     <div className={styles.member}>
-                        <img src="https://i.imgur.com/MBkP9hM.png" alt="Limbo hack"></img>
+                        <img src={s.src} alt="Limbo hack"></img>
                         <div className={styles.memberslink}>
                             <h3>{s.name}</h3>
                         </div>
