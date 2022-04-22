@@ -8,21 +8,21 @@ import styles from "../styles/testimonials.module.css";
 const reviews = [
     {
         content:
-            "Some review about this was an amazing event and\nchanged that person’s life in very eloquent words.",
-        name: "Random",
-        title: "Designer",
+            "It was a great opportunity to learn many new things. It also gave me an insight into the open source community.",
+        name: "Gaurika ",
+        title: "Student",
     },
     {
         content:
-            "Some review about this was an amazing event and\nchanged that person’s life in very eloquent words.",
-        name: "Random",
-        title: "Designer",
+            "Thus it was a journey where I learned a lot and spent time implementing it.",
+        name: "Diksha Mahajan",
+        title: "Student",
     },
     {
         content:
-            "Some review about this was an amazing event and\nchanged that person’s life in very eloquent words.",
-        name: "Random",
-        title: "Designer",
+            "Through this project, I gained a lot of experience and came across new things.",
+        name: "Aditi Shandyal",
+        title: "Student",
     },
 ];
 

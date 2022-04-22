@@ -13,11 +13,11 @@ import {
 } from "reactstrap";
 
 const team = [
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
 ];
 
 const Team = () => {
@@ -34,7 +34,7 @@ const Team = () => {
                         <Card className={styles.card}>
                             <CardImg
                                 alt="Card image cap"
-                                src="https://i.imgur.com/MBkP9hM.png"
+                                src={item.img}
                                 // top
                                 width="50px"
                                 className="rounded-circle"
