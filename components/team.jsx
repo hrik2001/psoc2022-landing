@@ -15,7 +15,7 @@ import {
 
 const team = [
     { src:"img/Shatabarto Bhattacharya.jpg", name: "Shatabarto Bhattacharya", title: "Some title", linkedin: "google.com" },
-    { src:"img/Ritvik.jpg", name: "Ritvik", title: "Some title", linkedin: "google.com" },    
+    { src:"img/Ritvik.jpg", name: "Ritvik Gupta", title: "Some title", linkedin: "google.com" },    
     { src:"img/ Aditi  Shandyal.jpg", name: "Aditi Shandyal", title: "Some title", linkedin: "google.com" },    
     { src:"img/Abhiroop Singh.jpg", name: "Abhiroop Singh", title: "Some title", linkedin: "google.com" },    
     { src:"img/Meghna Thakur.png", name: "Meghna Thakur", title: "Some title", linkedin: "google.com" },

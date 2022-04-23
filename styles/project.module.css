@@ -66,4 +66,8 @@
     .title {
         font-size: 40px;
     }
+    .projects{
+        /* display: none; */
+        height: 50vh;
+    }
 }

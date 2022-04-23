@@ -99,12 +99,16 @@
     }
     .members{
         display: block;
+        /* margin-left: 0%; */
         /* align-items: center; */
-        padding-left: 15%;
+        /* padding-left: 10%; */
     }
     /* .membercol{
         overflow: hidden;
     } */
+    .membercol{
+        margin-left: 20%;
+    }
     .member{
         width: fit-content;
     }
