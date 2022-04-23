@@ -112,6 +112,11 @@
 }
 
 @media (max-width: 460px) {
+    .emailgroup{
+        width: fit-content;
+        margin: auto;
+        padding-left: 5vh;
+    }
     .title {
         font-size: 60px;
         text-align: center;

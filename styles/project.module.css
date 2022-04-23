@@ -65,6 +65,9 @@
     }
     .title {
         font-size: 40px;
+        margin: 0;
+        width: fit-content;
+        margin: auto;
     }
     .projects{
         /* display: none; */
