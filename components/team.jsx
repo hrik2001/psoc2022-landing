@@ -40,6 +40,7 @@ const Team = () => {
                         </div>
                     </div>
                     {/* <Member name={s.Name} role={s.role} img={s.img} /> */}
+
                     </Col>
                 ))}
              

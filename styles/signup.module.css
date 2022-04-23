@@ -11,7 +11,7 @@
     position: auto;
 }
 
-.logincontent {
+.signupcontent {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -35,8 +35,7 @@
     padding: auto;
     display: flex;
     flex-direction: column;
-    position: relative;
-    align-items: center;
+    position: center;
     justify-content: center;
 }
 
@@ -62,14 +61,14 @@
     font-size: 24px;
 }
 
-.login {
+.signup {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 60%;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 51px;
+    border-radius: 51%;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.35);
     box-sizing: border-box;
@@ -84,15 +83,15 @@
     width: 70%;
     height: 60%;
     margin-top: 25px;
-    margin-bottom: 25px;
     background-color: transparent;
+    margin-bottom: 25px;
 }
 
-.loginbutton {
-    border-radius: 20px;
+.signupbutton {
+    border-radius: 47px;
     border-style: none;
-    width: 35%;
-    height: 50%;
+    width: 30%;
+    height: 40%;
     margin-top: 25px;
     margin-bottom: 25px;
     color: #ffffff;

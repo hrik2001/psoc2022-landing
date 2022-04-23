@@ -48,7 +48,8 @@ const How = ({ how }) => {
                     </div>
                 ))}
             </div>
-            <a href="/pdf/PSoC Guide.pdf">
+            <a href="/pdf/Sample_Proposal.pdf">
+
                 <h1 className={styles.know}>Know more{" >"}</h1>
             </a>
         </div>
