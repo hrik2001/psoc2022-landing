@@ -8,7 +8,7 @@ import styles from "../styles/testimonials.module.css";
 const reviews = [
     {
         content:
-            "It was a great opportunity to learn many new things. It also gave me an insight into the open source community.",
+        "It was a great opportunity to learn many new things. It also gave me an insight into the open source community.",
         name: "Gaurika ",
         title: "Student",
     },

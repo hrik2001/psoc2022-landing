@@ -6,29 +6,29 @@ const socials = [
     {
         src: "/img/twitter.png",
         title: "Twitter",
-        href: "twitter.com/pclubuiet",
+        href: "https://twitter.com/pclubuiet",
     },
     {
         src: "/img/instagram.png",
         title: "Instagram",
-        href: "instagram.com/pclubuiet",
+        href: "https://www.instagram.com/pclubuiet/",
     },
     {
         src: "/img/email.png",
         title: "Email",
-        href: "pclubuiet@gmail.com",
+        href: "mailto:pclubuiet@gmail.com",
     },
     {
         src: "/img/linkedin.png",
         title: "Linkedin",
-        href: "linkedin.com/pclubuiet",
+        href: "https://www.linkedin.com/company/pclubbuiet/mycompany/",
     },
 ];
 
 const Footer = () => {
     return (
         <div className={styles.container}>
-            <h4 className={styles.title}>Connect With us!</h4>
+            {/* <h4 className={styles.title}>Connect With us!</h4> */}
             <ul className={styles.list}>
                 {socials.map((item) => (
                     <li className={styles.listItem}>

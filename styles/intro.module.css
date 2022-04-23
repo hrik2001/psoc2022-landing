@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 50px 100px;
     font-size: 18px;
     position: sticky;
     font-size: 24px;
@@ -58,39 +58,6 @@
     line-height: 90px;
 }
 
-@media (max-width: 460px) {
-    .title {
-        font-size: 60px;
-        text-align: center;
-    }
-    .navlogo {
-        display: none;
-    }
-    .container {
-        height: fit-content;
-    }
-    #introlist {
-        margin-left: 50px;
-    }
-    .navcontainer {
-        padding-left: 0;
-    }
-    .introcontent {
-        text-align: center;
-        width: auto;
-        margin: auto;
-    }
-    #idek {
-        display: none;
-    }
-    .sponsors {
-        margin-top: 10%;
-        /* padding-bottom: 0; */
-    }
-    .card {
-        padding-bottom: 0;
-    }
-}
 
 .sponsors {
     font-size: 24px;
@@ -121,7 +88,7 @@
     height: 40px;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 .emailbutton {
     border-radius: 20px;
@@ -134,4 +101,55 @@
     margin-left: 10px;
     background-color: white;
     font-size: 24px;
+}
+
+@media(max-width: 767px) {
+    #idek{
+        /* : ndisplayone; */
+        background-color: red;
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .emailgroup{
+        width: fit-content;
+        margin: auto;
+        padding-left: 5vh;
+    }
+    .title {
+        font-size: 60px;
+        text-align: center;
+    }
+    .navlogo {
+        display: none;
+    }
+    .container {
+        height: fit-content;
+    }
+    #introlist {
+        /* width: fit-content;
+        margin: auto; */
+        margin-left: 5vh;
+    }
+    .navcontainer {
+        padding-left: 0;
+        margin: 0;
+    }
+    .introcontent {
+        text-align: center;
+        width: auto;
+        margin: auto;
+    }
+    #idek {
+        display: none;
+    }
+    .sponsors {
+        margin-top: 10%;
+        /* padding-bottom: 0; */
+    }
+    .card {
+        padding-bottom: 0;
+        padding: 0;
+    }
 }

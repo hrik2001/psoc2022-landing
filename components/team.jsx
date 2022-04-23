@@ -10,14 +10,15 @@ import {
     CardImg,
     Col,
     Row,
+    NavItem,
 } from "reactstrap";
 
 const team = [
-    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
-    { img: "/img/profile.png", name: "Mr. Person Guy", title: "Some title", linkedin: "google.com" },
+    { src:"img/Shatabarto Bhattacharya.jpg", name: "Shatabarto Bhattacharya", title: "Some title", linkedin: "google.com" },
+    { src:"img/Ritvik.jpg", name: "Ritvik Gupta", title: "Some title", linkedin: "google.com" },    
+    { src:"img/ Aditi  Shandyal.jpg", name: "Aditi Shandyal", title: "Some title", linkedin: "google.com" },    
+    { src:"img/Abhiroop Singh.jpg", name: "Abhiroop Singh", title: "Some title", linkedin: "google.com" },    
+    { src:"img/Meghna Thakur.png", name: "Meghna Thakur", title: "Some title", linkedin: "google.com" },
 ];
 
 const Team = () => {
@@ -28,31 +29,22 @@ const Team = () => {
             <h2 className={styles.subtitle}>
                 Meet the people who make it work!
             </h2>
-            <Row className={styles.card_container}>
-                {team.map((item) => (
-                    <Col className={styles.col}>
-                        <Card className={styles.card}>
-                            <CardImg
-                                alt="Card image cap"
-                                src={item.img}
-                                // top
-                                width="50px"
-                                className="rounded-circle"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5" className="text-center">
-                                    {item.name}
-                                </CardTitle>
-                                <CardSubtitle
-                                    className="mb-2 text-muted text-center"
-                                    tag="h6"
-                                >
-                                    {item.title}
-                                </CardSubtitle>
-                            </CardBody>
-                        </Card>
+            
+            <Row className={styles.members}>
+                {team.map(s => (
+                    <Col style={{maxWidth:"50%"}} className={styles.membercol}>
+                    <div className={styles.member}>
+                        <img src={s.src} alt="Limbo hack"></img>
+                        <div className={styles.memberslink}>
+                            <h3>{s.name}</h3>
+                        </div>
+                    </div>
+                    {/* <Member name={s.Name} role={s.role} img={s.img} /> */}
+
                     </Col>
                 ))}
+             
+            {/* </div> */}
             </Row>
         </div>
     );
