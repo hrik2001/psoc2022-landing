@@ -1,0 +1,14 @@
+.card{
+    width:fit-content;
+    color: #246D96;
+    padding: 1rem;
+    .number{
+        font-size: 6rem;
+        // font-weight: bold;
+    }
+    .title{
+        margin-top: -1.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
