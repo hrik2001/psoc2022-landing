@@ -5,6 +5,8 @@ import styles from "../styles/Home.module.scss";
 import Hero from "../components/Hero";
 import WorkSection from "../components/WorkSection";
 import ProjectSection from "../components/ProjectSection";
+import Timeline from "../components/Timeline";
+import TestamonialSection from "../components/TestamonialSection";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +14,7 @@ const Home: NextPage = () => {
       <Hero />
       <WorkSection />
       <ProjectSection />
+      <TestamonialSection />
     </div>
   );
 };

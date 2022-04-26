@@ -1,0 +1,29 @@
+$darkBlue : #24487E;
+$lightBlue : #3192CA;
+$grey : #617d98;
+
+.sectionTitle {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+
+    h2 {
+        margin-bottom: 0.75rem;
+        font-weight: 400;
+        color: $lightBlue;
+        color: white;
+    }
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: $darkBlue;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
