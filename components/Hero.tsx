@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from '../styles/Hero.module.scss'
-import Navbar from './navbar'
+import React from "react";
+import styles from "../styles/Hero.module.scss";
+import Navbar from "./Navbar";
 function Hero() {
   return (
     <div className={styles.container}>
-        <Navbar />
+      <Navbar />
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

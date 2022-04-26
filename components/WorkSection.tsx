@@ -1,5 +1,15 @@
+import Image from "next/image";
 import React from "react";
 import styles from "../styles/Work.module.scss";
+import { worksArray } from "../constants";
+
+const arrMap = [
+  {
+    img: "/img/form.png",
+    heading: "Apply",
+    sub: "Interested mentees propose a project.",
+  },
+];
 
 const WorkSection = () => {
   return (
@@ -7,10 +17,24 @@ const WorkSection = () => {
       <section>
         <h2 className={styles.workHeading}>How does it works ? </h2>
         <div className={styles.workCardContainer}>
-          {[1, 2, 3].map((item, index) => {
-            return <div key={index}></div>;
+          {worksArray.map((item, index) => {
+            return (
+              <div key={index} className={styles.workCard}>
+                <div className={styles.workCardImageContainer}>
+                  <img src={item.photo} alt="work card image" />
+                </div>
+
+                <h4>{item.title}</h4>
+
+                <p>{item.desc}</p>
+              </div>
+            );
           })}
         </div>
+
+        <a href="" className={styles.workLink}>
+          to learn more &gt;
+        </a>
       </section>
     </section>
   );
