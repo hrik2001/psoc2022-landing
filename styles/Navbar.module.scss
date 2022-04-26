@@ -1,0 +1,31 @@
+.nav{
+    display: flex;
+    top:15px;
+    position: fixed;
+    // border: 1px solid white;
+    width: 100vw;
+    // justify-content: space-around;
+}
+.imgcontainer{
+    margin-left: 50px;
+    min-width: 50px;
+    img{
+        width:50px;
+    }
+}
+.linkcontainer{
+    display: flex;
+    width:fit-content;
+    // border:1px solid white;
+    margin: 0 50px 0 auto;
+    
+}
+.link{
+    color:#fff;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover{
+        color: #00ffff;
+    }
+}
