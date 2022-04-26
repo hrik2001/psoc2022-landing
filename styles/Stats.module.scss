@@ -3,7 +3,9 @@
     color: #246D96;
     padding: 1rem;
     .number{
-        font-size: 6rem;
+        // font-size: 6rem;
+        font-size: clamp(4rem, 10vw, 6rem);
+
         // font-weight: bold;
     }
     .title{
