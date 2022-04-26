@@ -1,8 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
-import Hero from '../components/Hero'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.scss";
+import Hero from "../components/Hero";
+import WorkSection from "../components/WorkSection";
+import ProjectSection from "../components/ProjectSection";
 import Stats from '../components/Stats'
 import Data from '../data/Stats'
 
@@ -15,8 +17,10 @@ const Home: NextPage = () => {
           return (<Stats key={index} {...data} />)
         })}
       </div>
+        <WorkSection />
+        <ProjectSection />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

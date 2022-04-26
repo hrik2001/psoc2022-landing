@@ -1,11 +1,11 @@
-import React from 'react'
-import Navbar from '../components/navbar'
+import React from "react";
+import Navbar from "../components/Navbar";
 function timeline() {
   return (
     <div>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
     </div>
-  )
+  );
 }
 
-export default timeline
+export default timeline;
