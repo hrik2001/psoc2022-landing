@@ -1,0 +1,27 @@
+$lightBlue :#E8F2F6;
+$darkBlue : #24487E;
+
+.workSection{
+    background-color: $lightBlue;
+    height: max-content;
+    overflow: auto;
+
+    section{
+        width: 80%;
+        margin :1rem auto;
+    }
+
+    .workHeading{
+        font-size: 3.775rem;
+        color:$darkBlue;
+        margin:2rem auto 1rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .workCardContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
