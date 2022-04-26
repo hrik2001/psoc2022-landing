@@ -5,13 +5,20 @@ import styles from "../styles/Home.module.scss";
 import Hero from "../components/Hero";
 import WorkSection from "../components/WorkSection";
 import ProjectSection from "../components/ProjectSection";
+import Stats from '../components/Stats'
+import Data from '../data/Stats'
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Hero />
-      <WorkSection />
-      <ProjectSection />
+      <div className={styles.stats}>
+        {Data.map((data, index)=>{
+          return (<Stats key={index} {...data} />)
+        })}
+      </div>
+        <WorkSection />
+        <ProjectSection />
     </div>
   );
 };
