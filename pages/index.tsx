@@ -8,15 +8,15 @@ import ProjectSection from "../components/ProjectSection";
 import Timeline from "../components/Timeline";
 import TestamonialSection from "../components/TestamonialSection";
 import Stats from "../components/Stats";
-import Data from '../data/Stats'
+import Data from "../data/Stats";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Hero />
       <div className={styles.stats}>
-        {Data.map((data, index)=>{
-          return (<Stats key={index} {...data} />)
+        {Data.map((data, index) => {
+          return <Stats key={index} {...data} />;
         })}
       </div>
       <WorkSection />
