@@ -1,6 +1,6 @@
 import React from "react";
+import projects from "../data/Projects";
 import styles from "../styles/Project.module.scss";
-import { projects } from "../constants";
 
 const isLetter = (c: String) => {
   return c.toLowerCase() != c.toUpperCase();

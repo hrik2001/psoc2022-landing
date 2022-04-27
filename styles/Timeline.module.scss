@@ -1,0 +1,131 @@
+$darkBlue : #24487E;
+$lightBlue : #3192CA;
+$grey : #617d98;
+
+.gradient {
+    // height:100vh;
+    background: linear-gradient(0.5deg, #3192CA 12.81%, #24487E 59.29%);
+    background: #24487E;
+    box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sectionTitle {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    
+    h2{
+        margin-bottom: 0.75rem;
+        font-weight: 400;
+        color: $lightBlue;
+        color: white;
+    }
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: $darkBlue;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timelineCenter {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+.sectionCenter {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.timelineItem {
+    border-top: 2px dashed $darkBlue;
+    border-top: 2px dashed white;
+    margin: 0;
+    padding: 4rem 2rem;
+    position: relative;
+
+    h4{
+        color: white;
+    }
+}
+
+.timeline{
+    padding: 5rem 0;
+    p {
+    margin-bottom: 0;
+    color: $grey;
+    }
+}
+
+
+.timelineItem:nth-child(even){
+
+    border-left: 2px dashed $darkBlue;
+    border-left: 2px dashed white;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+    margin-right: 2rem;
+    padding-right: 0;
+
+}
+
+.timelineItem:nth-child(odd) {
+    border-right: 2px dashed $darkBlue;
+    border-right: 2px dashed white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+.timelineItem:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+}
+
+.timelineItem:last-child {
+    border-bottom-left-radius: 0;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    background: $darkBlue;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: $lightBlue;
+    font-weight: bold;
+}
+
+.timelineItem:nth-child(even) {
+    .number{
+        left: 0;
+    }
+}
+
+.timelineItem:nth-child(odd){
+
+    .number{
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    }
+}
