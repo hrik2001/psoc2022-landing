@@ -1,4 +1,5 @@
 .nav{
+    z-index: 99;
     display: flex;
     top:15px;
     position: fixed;
@@ -7,23 +8,23 @@
     // justify-content: space-around;
 }
 .imgcontainer{
-    margin-left: 50px;
-    min-width: 50px;
+    margin-left: clamp(20px, 5vw, 50px);
+    min-width: clamp(40px, 5vw, 50px);
     img{
-        width:50px;
+        width:clamp(40px, 5vw, 50px);
     }
 }
 .linkcontainer{
     display: flex;
     width:fit-content;
     // border:1px solid white;
-    margin: 0 50px 0 auto;
+    margin: 0 clamp(20px, 2.5vw, 50px) 0 auto;
     
 }
 .link{
     color:#fff;
     padding: 8px 12px;
-    font-size: 1.5rem;
+    font-size: clamp(1rem,1.5vw ,1.5rem);
     cursor: pointer;
     &:hover{
         color: #00ffff;
