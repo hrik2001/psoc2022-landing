@@ -1,6 +1,16 @@
 import React from "react";
 import styles from "../styles/Timeline.module.scss";
+import TimelineProps from "../data/Timeline";
 
+console.log(
+  TimelineProps,
+  TimelineProps[0].startDate.toLocaleString("default", { month: "long" })
+);
+
+const timeString = (date: Date) => {
+  return `${date.toLocaleString("default", { month: "long" })}
+                   ${date.getDate()} , ${date.getFullYear()}`;
+};
 const Timeline = () => {
   return (
     <section className={styles.timeline}>
@@ -10,14 +20,17 @@ const Timeline = () => {
       </div>
 
       <div className={styles.timelineCenter}>
-        {[1, 2, 3, 4, 6, 7].map((item, index) => {
+        {TimelineProps.map((item, index) => {
           return (
             <article key={index} className={styles.timelineItem}>
-              <h4>2020</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur
-                voluptates tempore numquam? Quidem incidunt fugit quasi autem, ea excepturi.
-              </p>
+              <h4>
+                {item.endDate
+                  ? `${timeString(item.startDate)}\xa0\xa0\xa0-\xa0\xa0\xa0${timeString(
+                      item.endDate
+                    )}`
+                  : timeString(item.startDate)}
+              </h4>
+              <p>{item.description}</p>
               <span className={styles.number}>{index + 1}</span>
             </article>
           );

@@ -22,3 +22,9 @@ interface TestamonialProps {
   name: strnig;
   title: string;
 }
+
+interface TimelineProps {
+  startDate: Date;
+  endDate?: Date;
+  description: string;
+}
