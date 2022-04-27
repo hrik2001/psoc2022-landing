@@ -16,3 +16,9 @@ interface WorksProps {
   desc: string;
   photo: string;
 }
+
+interface TestamonialProps {
+  content: string;
+  name: strnig;
+  title: string;
+}

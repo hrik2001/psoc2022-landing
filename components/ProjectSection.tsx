@@ -33,10 +33,10 @@ const ProjectSection = () => {
       </div>
       <div className={styles.projectContainerWrapper}>
         <div className={styles.projectContainer}>
-          {projects.map((item, index) => {
+          {projects.map((item: ProjectsProps, index) => {
             return (
               <figure key={index}>
-                <a href={item.src}>
+                <a href={item.src} target="_blank">
                   <div
                     className={
                       item.img ? styles.projectImgContainer : styles.projectInitialContainer

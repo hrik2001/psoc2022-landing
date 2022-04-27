@@ -7,11 +7,13 @@ import WorkSection from "../components/WorkSection";
 import ProjectSection from "../components/ProjectSection";
 import Timeline from "../components/Timeline";
 import TestamonialSection from "../components/TestamonialSection";
+import Stats from "../components/Stats";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Hero />
+      {/* <Stats /> */}
       <WorkSection />
       <ProjectSection />
       <TestamonialSection />

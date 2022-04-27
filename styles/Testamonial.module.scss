@@ -1,11 +1,18 @@
 $darkBlue : #24487E;
 $lightBlue : #3192CA;
 $grey : #617d98;
+$backgroundBlue : #E8F2F6;
+$lightPurple : #24487e80;
+
+.TestamonialSection{
+    padding: 3rem 0;
+}
+
 
 .sectionTitle {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 1;
     text-transform: capitalize;
     letter-spacing: 0.25rem;
@@ -14,7 +21,8 @@ $grey : #617d98;
         margin-bottom: 0.75rem;
         font-weight: 400;
         color: $lightBlue;
-        color: white;
+        color: $darkBlue;
+        // color: white;
     }
 }
 
@@ -23,11 +31,62 @@ $grey : #617d98;
     height: 0.25rem;
     margin-bottom: 1.25rem;
     background: $darkBlue;
-    background: white;
+    // background: white;
     margin-left: auto;
     margin-right: auto;
 }
 
+.testamonialContainer {
+    width: 90%;
+    margin:auto;
+}
+
 .testamonialCard {
-    
+    background-color: $backgroundBlue;
+    max-width: 723px;
+    border-radius: 4rem;
+    padding: 3rem;
+    text-align: center;
+    margin:0 auto;
+
+    h2 {
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        line-height: 1.2;
+        color:$lightPurple;
+    }
+
+}
+
+.testmonialQoute {
+    font-size: 6rem;
+    font-weight: 400;
+    color: $darkBlue;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+}
+
+.testamonialQouteImg {
+    width: fit-content;
+    margin:1rem auto;
+}
+
+@media all and (max-width : 800px) {
+    .testamonialCard{
+        max-width: 500px;
+        padding: 1.5rem;
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        h4{
+            font-size: 1.2rem;
+        }
+    }
 }
