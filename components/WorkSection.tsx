@@ -1,15 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import worksArray from "../data/Works";
 import styles from "../styles/Work.module.scss";
-import { worksArray } from "../constants";
-
-const arrMap = [
-  {
-    img: "/img/form.png",
-    heading: "Apply",
-    sub: "Interested mentees propose a project.",
-  },
-];
 
 const WorkSection = () => {
   return (
