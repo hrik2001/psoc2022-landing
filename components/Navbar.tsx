@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 function Navbar() {
+  const [colorChange,setColorChange]=useState(false);
   return (
     <nav className={styles.nav}>
         <div className={styles.imgcontainer}>

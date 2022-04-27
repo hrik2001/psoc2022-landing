@@ -1,14 +1,17 @@
+.active{
+}
 .nav{
     z-index: 99;
     display: flex;
-    top:15px;
+    padding: 5px 0;
     position: fixed;
+    background-color: #24487E;
     // border: 1px solid white;
     width: 100vw;
     // justify-content: space-around;
 }
 .imgcontainer{
-    margin-left: clamp(20px, 5vw, 50px);
+    margin-left: clamp(20px, 5vw, 70px);
     min-width: clamp(40px, 5vw, 50px);
     img{
         width:clamp(40px, 5vw, 50px);
@@ -18,7 +21,7 @@
     display: flex;
     width:fit-content;
     // border:1px solid white;
-    margin: 0 clamp(20px, 2.5vw, 50px) 0 auto;
+    margin: 0 clamp(20px, 5vw, 70px) 0 auto;
     
 }
 .link{
@@ -26,7 +29,10 @@
     padding: 8px 12px;
     font-size: clamp(1rem,1.5vw ,1.5rem);
     cursor: pointer;
-    &:hover{
+    &:hover, &:focus{
         color: #00ffff;
+    }
+    &:active{
+        font-weight: bold;
     }
 }
