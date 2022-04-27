@@ -23,7 +23,7 @@
         img{
             position: relative;
             width:50rem;
-            left:20rem;
+            // left:20rem;
         }
     }
     form{
@@ -46,4 +46,12 @@
             width:clamp(200px, 30vw, 300px);
         }
     }
+}
+@media screen and (max-width:1024px) {
+.introAi{
+    width: 0px;
+    img{
+        width:0px;
+    }
+}    
 }

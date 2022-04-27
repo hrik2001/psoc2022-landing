@@ -12,7 +12,7 @@ function Hero() {
                     Your first open source contribution is on us.
                 </p>
                 <form action="submit">
-                <input type="email" placeholder='Enter your Email to get Subscription' required />
+                <input type="email" placeholder='Enter your Email' required />
                 <button type="submit">GO!</button>
                 </form>
             </div>
