@@ -22,3 +22,9 @@ interface TestamonialProps {
   name: strnig;
   title: string;
 }
+
+interface ContactProps{
+  name: string;
+  src: string;
+  img: string;
+}

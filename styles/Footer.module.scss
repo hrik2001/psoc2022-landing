@@ -1,0 +1,58 @@
+$darkBlue : #24487E;
+$lightBlue : #3192CA;
+
+.title{
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+
+    // margin-top: 4vh;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    margin-right: 5vh;
+    font-weight: bold;
+}
+.footer{
+    background-color: #24487E;
+}
+.contactinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3vh;
+}
+.contactTitle{
+    margin-left: 2vh;
+}
+.love{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+@media all and (max-width : 700px) {
+    .contactinfo{
+        // display: none;
+        flex-direction: column;
+        // align-items: center;
+        width:fit-content ;
+        margin: auto;
+    }
+    .contacts{
+        margin-bottom: 2vh;
+        margin-right: 0;
+    }
+    .love{
+        padding-bottom: 2vh;
+    }
+}
