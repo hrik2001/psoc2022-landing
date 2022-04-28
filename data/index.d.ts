@@ -28,3 +28,9 @@ interface TimelineProps {
   endDate?: Date;
   description: string;
 }
+
+interface InfoProps {
+  id: number;
+  title: string;
+  desc: string;
+}
