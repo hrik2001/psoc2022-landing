@@ -7,11 +7,15 @@ function AboutInfo() {
     <div className={styles.container}>
       {infoAbout.map((item: InfoProps, index) => {
         return (
-          <div key={index} className={styles.infoCard}>
-            <h4>{item.title}</h4>
+          <>
+            <div key={index} className={styles.infoCard}>
+              <h4>{item.title}</h4>
 
-            <p>{item.desc}</p>
-          </div>
+              <p>{item.desc}</p>
+            </div>
+
+            <div className={styles.underline}></div>
+          </>
         );
       })}
     </div>

@@ -1,23 +1,22 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Stats from "./Stats";
-import styles from "../styles/aboutIntro.module.scss"
+import styles from "../styles/aboutIntro.module.scss";
 import Data from "../data/Stats";
 
-
-function AboutIntro({val,title}:statsProps) {
+function AboutIntro() {
   return (
     <div className={styles.container}>
       <Navbar />
       <div className={styles.psocLogo}>
-        <img src="/img/psoc-logo-2.png" alt="logo"/>
+        <img src="/img/psoc-logo-2.png" alt="logo" />
       </div>
       <div className={styles.stats}>
-        {Data.map((data, index) => {
+        {Data.map((data: statsProps, index) => {
           return <Stats key={index} {...data} />;
         })}
       </div>
-      </div>
+    </div>
   );
 }
 
