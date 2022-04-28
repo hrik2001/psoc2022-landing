@@ -1,0 +1,22 @@
+.container{
+    height: 60vh;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #254C82;
+    font-weight: 300;
+    font-size: 40px;
+    padding: 4rem;
+
+    h2{
+        font-size: clamp(4rem, 10vw, 6rem);
+        line-height: clamp(4.5rem,13.33vw,8rem);
+    }
+    p{
+        font-size: clamp(1rem,2.5vw,1.5rem);
+    }
+}
+
