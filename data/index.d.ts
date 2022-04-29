@@ -37,4 +37,15 @@ interface TeamMember {
   linkedin?: string;
   twitter?: string;
   email?: string;
+
+interface TimelineProps {
+  startDate: Date;
+  endDate?: Date;
+  description: string;
+}
+
+interface InfoProps {
+  id: number;
+  title: string;
+  desc: string;
 }

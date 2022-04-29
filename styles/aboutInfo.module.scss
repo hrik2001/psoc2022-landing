@@ -1,0 +1,35 @@
+$darkBlue : #24487E;
+
+.container{
+    height: 60vh;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #254C82;
+    font-weight: 300;
+    font-size: 40px;
+    padding: clamp(2.5rem,6vw,4rem);
+
+    h4{
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        line-height: clamp(2.5rem,6vw,4rem);
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: clamp(1rem,2.5vw,1.5rem);
+    }
+}
+
+.underline {
+    width: 60%;
+    height: 0.15rem;
+    margin-bottom: 1.25rem;
+    background: $darkBlue;
+    // background: white;
+    // margin:2rem auto;
+    margin: auto;
+}
+
