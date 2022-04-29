@@ -37,6 +37,7 @@ interface TeamMember {
   linkedin?: string;
   twitter?: string;
   email?: string;
+}
 
 interface TimelineProps {
   startDate: Date;
