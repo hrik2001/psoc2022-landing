@@ -1,0 +1,150 @@
+$darkBlue : #24487E;
+$lightBlue : #3192CA;
+$grey : #617d98;
+$backgroundBlue : #E8F2F6;
+$lightPurple : #24487e80;
+
+.TeamSection{
+    padding: 3rem 0;
+}
+
+.sectionTitle {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+
+    h2 {
+        margin-bottom: 0.75rem;
+        font-weight: 400;
+        color: $lightBlue;
+        color: $darkBlue;
+        // color: white;
+    }
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: $darkBlue;
+    // background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TeamCard {
+    background-color: $backgroundBlue;
+    border-radius: 15px;
+    //margin: auto;
+    width: 30vw;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 8px;
+
+    .ImageContainer{
+        padding: 15px;
+        .TeamImage{
+            width: 128px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+
+    .TeamDescriptionContainer {
+        padding: 10px;
+        .TeamHeading {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px; 
+            color: #254C82;
+        }
+
+        .TeamDesignation {
+			font-style: normal;
+			font-weight: 200;
+			font-size: 30px;
+			line-height: 36px;
+        }
+        .ContactContainer {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px;
+            //margin: auto;
+            .ContainerLogo {
+                padding: 5px 0px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+.CardSec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media (min-width: 300px) {
+    .TeamCard {
+        //margin: auto;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .ImageContainer {
+    }
+
+    .ContactContainer {
+        margin: 0px;
+        width: 70%;
+    }
+}
+
+@media (min-width: 700px) {
+    .TeamCard {
+        //margin: auto;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+        .TeamHeading {
+            text-align: center;
+        }
+        .TeamDesignation {
+            text-align: center;
+        }
+    .ImageContainer {
+    }
+    .ContactContainer {
+        margin: auto;
+        width: 40%;
+    }
+}
+@media (min-width: 1000px) {
+    .TeamCard {
+        //margin: auto;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+    }
+        .TeamHeading {
+            text-align: center;
+        }
+        .TeamDesignation {
+            text-align: center;
+        }
+    .ImageContainer {
+    }
+    .ContactContainer {
+        margin: auto;
+        width: 40%;
+    }
+}
+

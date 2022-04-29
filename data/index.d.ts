@@ -28,3 +28,13 @@ interface ContactProps{
   src: string;
   img: string;
 }
+
+interface TeamMember {
+  pic: string;
+  name: string;
+  designation: string;
+  github?: string;
+  linkedin?: string;
+  twitter?: string;
+  email?: string;
+}
