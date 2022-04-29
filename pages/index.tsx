@@ -9,7 +9,6 @@ import Timeline from "../components/Timeline";
 import TestamonialSection from "../components/TestamonialSection";
 import Stats from "../components/Stats";
 import Data from "../data/Stats";
-import TeamSection from '../components/teamsection';
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
       <WorkSection />
       <ProjectSection />
       <TestamonialSection />
-      <TeamSection />
     </div>
   );
 };
