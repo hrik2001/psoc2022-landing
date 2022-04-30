@@ -2,11 +2,6 @@ import React from "react";
 import styles from "../styles/Timeline.module.scss";
 import TimelineProps from "../data/Timeline";
 
-console.log(
-  TimelineProps,
-  TimelineProps[0].startDate.toLocaleString("default", { month: "long" })
-);
-
 const timeString = (date: Date) => {
   return `${date.toLocaleString("default", { month: "long" })}
                    ${date.getDate()} , ${date.getFullYear()}`;
