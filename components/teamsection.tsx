@@ -12,7 +12,7 @@ function TeamSection(){
                 {
                     data.map(
                         (i) => {
-                            return <TeamCard {...i} />
+                            return <TeamCard key={i.pic} {...i} />
                         }
                     )
                 }

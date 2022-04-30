@@ -36,7 +36,7 @@ const ProjectSection = () => {
           {projects.map((item: ProjectsProps, index) => {
             return (
               <figure key={index}>
-                <a href={item.src} target="_blank">
+                <a href={item.src}>
                   <div
                     className={
                       item.img ? styles.projectImgContainer : styles.projectInitialContainer

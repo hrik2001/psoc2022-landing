@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
         <div className={styles.imgcontainer}>
-          <a href ="/">
+          <Link href ="/">
               <img src="./img/psoc-logo-1.png" alt="<P>Club logo" />
-          </a>
+          </Link>
         </div>
         <div className={styles.linkcontainer}>
             <Link  href="/" passHref><p className={styles.link}>Home</p></Link>

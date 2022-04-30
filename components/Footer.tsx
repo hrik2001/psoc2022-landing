@@ -12,7 +12,7 @@ function Footer() {
             </h1>
             <div className={styles.contactinfo}>
                 {contactData.map(item=>(
-                    <a className={styles.contacts} href={item.src}>
+                    <a className={styles.contacts} key={item.name} href={item.src}>
                         {/* <img src={item.img} alt="contact image" srcset="" height='40px' width='40px'/> */}
                         <Image src={item.img} height='40px' width='40px'></Image>
                         <p className={styles.contactTitle}>{item.name}</p>
