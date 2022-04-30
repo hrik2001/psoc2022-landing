@@ -9,9 +9,7 @@ const isLetter = (c: String) => {
 const returnInitials = (name: String) => {
   let initials = "";
   let splitArray = name.split(" ");
-  console.log(splitArray.length);
   if (splitArray.length > 1) {
-    console.log("working", initials);
     let i = splitArray.length;
     for (let i = 0; i < splitArray.length; i++) {
       initials += splitArray[i][0];
@@ -19,7 +17,6 @@ const returnInitials = (name: String) => {
   } else {
     let i = 0;
     for (let i = 0; i < 2; i++) {
-      console.log(initials);
       initials += splitArray[0][i];
     }
   }
