@@ -30,7 +30,9 @@ const Timeline = () => {
                     )}`
                   : timeString(item.startDate)}
               </h4>
-              <p>{item.description}</p>
+              <h2>{item.title}</h2>
+              {item.description && <p>{item.description}</p>}
+
               <span className={styles.number}>{index + 1}</span>
             </article>
           );
