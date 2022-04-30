@@ -16,7 +16,7 @@
     margin-top: 50px;
     img{
         margin: auto;
-        height: 30vw;
-        width: 30vw;
+        height: clamp(100px, 80vw, 324px);
+        width: clamp(100px, 80vw, 324px);
     }
 }
