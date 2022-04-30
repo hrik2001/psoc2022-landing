@@ -40,7 +40,7 @@ function TeamCard(props: TeamMember){
                     {
                         (props.email) ?
                         <div className={style.ContainerLogo}>
-                            <a href={`mailto:{props.github}`}>
+                            <a href={`mailto:${props.email}`}>
                                 <img src='/img/email.svg' />
                             </a>
                         </div> : null

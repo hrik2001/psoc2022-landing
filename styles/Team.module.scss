@@ -58,18 +58,19 @@ $lightPurple : #24487e80;
 
     .TeamDescriptionContainer {
         padding: 10px;
+        width:100%;
         .TeamHeading {
             font-style: normal;
             font-weight: 600;
-            font-size: 48px;
-            line-height: 58px; 
+            font-size: clamp(20px,4vw,48px);
+            line-height: clamp(20px,4vw,58px); 
             color: #254C82;
         }
 
         .TeamDesignation {
 			font-style: normal;
 			font-weight: 200;
-			font-size: 30px;
+			font-size: clamp(13px,3vw,30px);
 			line-height: 36px;
         }
         .ContactContainer {
