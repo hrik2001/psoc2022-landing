@@ -1,41 +1,41 @@
 const TimelineProps: TimelineProps[] = [
   {
     startDate: new Date("05/10/2022"),
-    description: "Mentor Registration Starts",
+    title: "Mentor Registration Starts",
   },
   {
     startDate: new Date("05/30/2022"),
-    description: "Mentor Registration Ends",
+    title: "Mentor Registration Ends",
   },
   {
     startDate: new Date("06/05/2022"),
-    description: "Mentee Registration Begins",
+    title: "Mentee Registration Begins",
   },
   {
     startDate: new Date("06/25/2022"),
-    description: "Mentee Registration Ends",
+    title: "Mentee Registration Ends",
   },
   {
     startDate: new Date("06/30/2022"),
-    description: "Selected Mentees list out",
+    title: "Selected Mentees list out",
   },
   {
     startDate: new Date("07/01/2022"),
     endDate: new Date("07/02/ 2022"),
-    description: "Interaction Period/ Setup time",
+    title: "Interaction Period/ Setup time",
   },
   {
     startDate: new Date("07/03/2022"),
     endDate: new Date("08/31/2022"),
-    description: "Coding",
+    title: "Coding",
   },
   {
     startDate: new Date("09/02/2022"),
-    description: "Final presentation",
+    title: "Final presentation",
   },
   {
     startDate: new Date("09/05/2022"),
-    description: "Certificate distribution",
+    title: "Certificate distribution",
   },
 ];
 

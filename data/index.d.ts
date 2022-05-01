@@ -23,7 +23,7 @@ interface TestamonialProps {
   title: string;
 }
 
-interface ContactProps{
+interface ContactProps {
   name: string;
   src: string;
   img: string;
@@ -42,7 +42,8 @@ interface TeamMember {
 interface TimelineProps {
   startDate: Date;
   endDate?: Date;
-  description: string;
+  title: string;
+  description?: string;
 }
 
 interface InfoProps {

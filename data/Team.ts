@@ -43,6 +43,15 @@ const data: TeamMember[] = [
     twitter: "https://twitter.com/yu_a_vi",
     email: "uav0108@gmail.com",
   },
+  {
+    pic: "/img/rishabh.jpg",
+    name: "Rishabh Verma",
+    designation: "Web Developer",
+    github: "https://github.com/rishabhverma-spec",
+    linkedin: "https://www.linkedin.com/in/rishabh-verma-7a98a5200/",
+    twitter: "https://twitter.com/RyuV_8085",
+    email: "ue208085.rishabhverma.it@gmail.com",
+  },
 ];
 
 export default data;
