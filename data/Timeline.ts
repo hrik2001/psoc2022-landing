@@ -7,6 +7,13 @@ const TimelineProps: TimelineProps[] = [
     startDate: new Date("05/30/2022"),
     title: "Mentor Registration Ends",
   },
+
+  {
+    startDate: new Date("06/01/2022"),
+    endDate: new Date("06/04/2022"),
+    title: "Mentor Project Evaluation",
+  },
+
   {
     startDate: new Date("06/05/2022"),
     title: "Mentee Registration Begins",
@@ -14,6 +21,11 @@ const TimelineProps: TimelineProps[] = [
   {
     startDate: new Date("06/25/2022"),
     title: "Mentee Registration Ends",
+  },
+  {
+    startDate: new Date("06/24/2022"),
+    endDate: new Date("06/29/2022"),
+    title: "project and proposal evaluation",
   },
   {
     startDate: new Date("06/30/2022"),
