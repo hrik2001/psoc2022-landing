@@ -48,6 +48,19 @@
         }
     }
 }
+
+.arrowDown{
+    position: absolute;
+    bottom:5rem;
+    left: 49vw;
+    animation: arrowDown 2s ease-out infinite;
+}
+
+@keyframes arrowDown{
+    0%{bottom:5rem;}
+    100%{bottom:1rem;}
+}
+
 @media screen and (max-width:1024px) {
 .introAi{
     width: 0px;

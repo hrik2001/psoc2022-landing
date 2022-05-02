@@ -20,7 +20,9 @@ function Hero() {
                     <img src="/img/pair-programming.svg" alt="illustrations" />
                 </div>
             </div>
-
+            <div className={styles.arrowDown}>
+                <img src="/img/arrow-down.svg" alt="arrow down" />
+            </div>
         </div>
     );
 }
