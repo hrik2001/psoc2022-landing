@@ -1,7 +1,30 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import styles from '../styles/Hero.module.scss'
 import Navbar from './Navbar'
+import axios from 'axios';
+
 function Hero() {
+    const emailInput = useRef(null);
+
+    function submission(e: React.FormEvent<HTMLFormElement>){
+        e.preventDefault();
+        // @ts-ignore: Object is possibly 'null'.
+        if(emailInput.current.value){
+            // @ts-ignore: Object is possibly 'null'.
+            //alert(emailInput.current.value);
+            axios.post(
+                "https://psoc2022-07d7.restdb.io/rest/email?apikey=0bd7016f40c009a912e69058e25bc811f8d07",
+                {
+                    // @ts-ignore: Object is possibly 'null'.
+                    email: emailInput.current.value
+                }
+            ).then(
+                console.log
+            ).catch(
+                console.error
+            )
+        }
+    }
     return (
         <div className={styles.container}>
             <Navbar />
@@ -11,8 +34,8 @@ function Hero() {
                     <p>
                         Your first open source contribution is on us.
                     </p>
-                    <form action="submit">
-                        <input type="email" placeholder='Enter your Email' required />
+                    <form onSubmit={submission} action="submit">
+                        <input  type="email" ref={emailInput} placeholder='Enter your Email' required />
                         <button type="submit">GO!</button>
                     </form>
                 </div>
