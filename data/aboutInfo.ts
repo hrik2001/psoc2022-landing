@@ -7,7 +7,7 @@ const infoAbout: InfoProps[] = [
   {
     id: 2,
     title: "About PClub",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    desc: "Pclub is a community of students who are highly enthusiastic about coding, web development and all other aspects of programming. Pclub was established in 2017. Since then it has been conducting sessions, webinars and group discussions in order to share ample information and build strong network. With each passing year it is coming out with flying colours and achieving new heights. Pclub organises various activities and open source projects like software freedom day,hacktober,AIsaturdays  Psoc which encourages a lot of students to contribute and gain knowledge.",
   },
 ];
 

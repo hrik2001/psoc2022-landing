@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/Hero.module.scss'
 import Navbar from './Navbar'
+import Link from 'next/link'
 function Hero() {
     return (
         <div className={styles.container}>
@@ -11,10 +12,14 @@ function Hero() {
                     <p>
                         Your first open source contribution is on us.
                     </p>
-                    <form action="submit">
+                    {/* <form action="submit">
                         <input type="email" placeholder='Enter your Email' required />
                         <button type="submit">GO!</button>
-                    </form>
+                    </form> */}
+                    <p className={styles.link}>
+
+                    <Link href={"https://forms.gle/xbmLjSx6Vd1bU5J6A"} passHref> Submit Projects  </Link>
+                    </p>
                 </div>
                 <div className={styles.introAi}>
                     <img src="/img/pair-programming.svg" alt="illustrations" />
