@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import styles from '../styles/Hero.module.scss'
 import Navbar from './Navbar'
 import Link from 'next/link'
+
+
 function Hero() {
     return (
         <div className={styles.container}>
@@ -14,6 +16,8 @@ function Hero() {
                     </p>
                     {/* <form action="submit">
                         <input type="email" placeholder='Enter your Email' required />
+                    <form onSubmit={submission} action="submit">
+                        <input  type="email" ref={emailInput} placeholder='Enter your Email' required />
                         <button type="submit">GO!</button>
                     </form> */}
                     <p className={styles.link}>
