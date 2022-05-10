@@ -62,9 +62,10 @@
 }
 
 .arrowDown{
-    position: absolute;
-    bottom:5rem;
-    left: 49vw;
+    position: relative;
+    // bottom:5rem;
+    left: 50vw;
+    transform: translateX(-20px);
     animation: arrowDown 2s ease-out infinite;
 }
 
