@@ -39,7 +39,7 @@ const ProjectSection = () => {
                       item.img ? styles.projectImgContainer : styles.projectInitialContainer
                     }
                   >
-                    {item.img ? <img src="" alt="" /> : returnInitials(item.name)}
+                    {item.img ? <img src={item.img} alt="" /> : returnInitials(item.name)}
                   </div>
 
                   <h4 className={styles.projectName}>{item.name}</h4>
