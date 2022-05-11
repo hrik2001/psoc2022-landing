@@ -20,7 +20,7 @@ const contactData: ContactProps[]=[
     {
         name: "Email",
         img: "/img/email.png",
-        src: "mialto:pclubuiet@gmail.com",
+        src: "mailto:pclubuiet@gmail.com",
 
     },
 ]

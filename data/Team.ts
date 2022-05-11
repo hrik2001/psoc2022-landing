@@ -24,6 +24,9 @@ const data: TeamMember[] = [
     pic: "img/Ritvik.jpg",
     name: "Ritvik Gupta",
     designation: "Web Developer",
+    github: "https://github.com/theseus-alt",
+    linkedin: "https://www.linkedin.com/in/ritvik-gupta-a6196a1bb",
+    email: "ritvikgupta75@gmail.com",
   },
   {
     pic: "/img/Shatabarto Bhattacharya.jpg",
