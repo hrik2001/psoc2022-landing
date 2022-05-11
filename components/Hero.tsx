@@ -22,7 +22,7 @@ function Hero() {
                     </form> */}
                     <p className={styles.link}>
 
-                    <Link href={"https://forms.gle/xbmLjSx6Vd1bU5J6A"} passHref> Submit Projects  </Link>
+                    <Link href={"https://forms.gle/xbmLjSx6Vd1bU5J6A"} passHref> Metor Registration  </Link>
                     </p>
                 </div>
                 <div className={styles.introAi}>
