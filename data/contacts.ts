@@ -1,9 +1,8 @@
-const contactData: ContactProps[]=[
+const contactData: ContactProps[] = [
     {
-        name: "Twitter",
-        img: "/img/twitter.png",
-        src: "https://twitter.com/PClubUIET",
-
+      name: "Twitter",
+      img: "/img/twitter.png",
+      src: "https://twitter.com/PClubUIET",
     },
     {
         name: "Instagram",

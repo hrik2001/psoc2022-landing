@@ -60,6 +60,18 @@ $lightBlue : #3192CA;
     height: 12rem;
 }
 
+.projectImgContainer {
+    width: 12rem;
+    height: 12rem;
+    margin : 0rem auto 1.5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
 .projectName{
     color: white;
 }
@@ -86,6 +98,11 @@ $lightBlue : #3192CA;
     .projectInitialContainer {
         padding: 1rem;
         font-size: 3rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .projectImgContainer {
         width: 6rem;
         height: 6rem;
     }

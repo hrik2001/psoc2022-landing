@@ -7,7 +7,7 @@ const WorkSection = () => {
   return (
     <section className={styles.workSection}>
       <section>
-        <h2 className={styles.workHeading}>How does it works ? </h2>
+        <h2 className={styles.workHeading}>How does it work ? </h2>
         <div className={styles.workCardContainer}>
           {worksArray.map((item: WorksProps, index) => {
             return (

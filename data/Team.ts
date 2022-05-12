@@ -9,16 +9,19 @@ const data: TeamMember[] = [
     pic: "img/Abhiroop Singh.jpg",
     name: "Abhiroop Singh",
     designation: "Marketing",
+    linkedin: "https://www.linkedin.com/in/abhiroop-singh-a50460200",
   },
   {
     pic: "img/Aditi  Shandyal.jpg",
     name: "Aditi Shandyal",
     designation: "Content Writing",
+    linkedin: "https://www.linkedin.com/in/aditi-shandyal-2b9685203",
   },
   {
     pic: "img/Meghna Thakur.png",
     name: "Meghna Thakur",
     designation: "Graphics, Web Developer",
+    linkedin: "https://www.linkedin.com/in/thakur-meghna",
   },
   {
     pic: "img/Ritvik.jpg",

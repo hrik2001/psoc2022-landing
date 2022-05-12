@@ -8,7 +8,7 @@ const TestamonialSection = () => {
   return (
     <section className={style.TestamonialSection}>
       <div className={style.sectionTitle}>
-        <h2>Testamonials</h2>
+        <h2>Testimonials</h2>
         <div className={style.underline}></div>
       </div>
       <div className={style.testamonialContainer}>

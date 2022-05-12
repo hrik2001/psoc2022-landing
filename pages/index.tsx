@@ -13,6 +13,12 @@ import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
+    <>
+     <Head>
+     <link rel="shortcut icon" href="/favicon.ico" />
+        <title>PSoC</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
     <div className={styles.container}>
       <Hero />
       <div className={styles.stats}>
@@ -25,6 +31,7 @@ const Home: NextPage = () => {
       <TestamonialSection />
       <Footer/>
     </div>
+        </>
   );
 };
 
