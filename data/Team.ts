@@ -10,18 +10,23 @@ const data: TeamMember[] = [
     name: "Abhiroop Singh",
     designation: "Marketing",
     linkedin: "https://www.linkedin.com/in/abhiroop-singh-a50460200",
+    email: "abhiroopsk@gmail.com",
+    github: "https://github.com/abhiroopsk",
   },
   {
     pic: "img/Aditi  Shandyal.jpg",
     name: "Aditi Shandyal",
     designation: "Content Writing",
     linkedin: "https://www.linkedin.com/in/aditi-shandyal-2b9685203",
+    github: "https://github.com/17aditi1201",
   },
   {
     pic: "img/Meghna Thakur.png",
     name: "Meghna Thakur",
     designation: "Graphics, Web Developer",
     linkedin: "https://www.linkedin.com/in/thakur-meghna",
+    email: "meghnathakur2001@gmail.com",
+    github: "https://github.com/thakur-meg",
   },
   {
     pic: "img/Ritvik.jpg",
