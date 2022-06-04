@@ -27,6 +27,22 @@
             &:hover{
                 box-shadow: 2px 2px 10px 5px #0000001a;
             }
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .linkSubtle {
+            border : 2px solid #1de235;
+            color: #1de235;
+            width: fit-content;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                    box-shadow: 2px 2px 10px 5px #0000001a;
+                }
+            display:inline-block;
         }
     }
     .introAi{
