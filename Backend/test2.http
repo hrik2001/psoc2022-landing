@@ -1,0 +1,14 @@
+
+
+
+POST http://localhost:3000/form
+content-type: application/json
+
+
+{
+    "name":"Arin",
+    "Github_profile":"afsfasffa",
+    "Phone_no":624626264,
+    "email":"aryanchumtiyahai@gmail.com"
+
+}
