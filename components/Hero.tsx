@@ -18,15 +18,15 @@ function Hero() {
                         <button type="submit">GO!</button>
                     </form> */}
           <p className={styles.link}>
-            <Link href={"https://forms.gle/xbmLjSx6Vd1bU5J6A"} passHref>
-              Mentor Registration
+            <Link href={"https://forms.gle/6cDtKm9gCoRFMVwA6"} passHref>
+              Mentee Registration
             </Link>
           </p>
-          <p className={styles.linkSubtle}>
+          {/* <p className={styles.linkSubtle}>
             <a href="pdf/Proposal.pdf" download>
               Mentor Example Proposal
             </a>
-          </p>
+          </p> */}
         </div>
         <div className={styles.introAi}>
           <img src="/img/pair-programming.svg" alt="illustrations" />
