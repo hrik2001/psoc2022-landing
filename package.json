@@ -3,21 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "next:lint": "next lint",
+    "next:build": "next build",
+    "prisma:lint": "prisma lint",
+    "prisma:generate": "prisma generate",
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run prisma:generate && npm run next:build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npm run next:lint && npm run prisma:lint"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.6.3",
+    "@prisma/client": "^4.1.0",
     "axios": "^0.27.2",
+    "fp-ts": "^2.12.1",
+    "io-ts": "^2.2.16",
+    "jose": "^4.8.3",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-material-ui-carousel": "^2.3.11",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "winston": "^3.8.1"
   },
   "devDependencies": {
     "@types/node": "17.0.27",
