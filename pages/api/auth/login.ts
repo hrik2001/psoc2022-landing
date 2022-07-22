@@ -4,6 +4,7 @@ import authRepo from "../../../lib/deps/auth";
 import prisma from "../../../lib/deps/prisma";
 import { errResp, expressRes, expressUnwrappErr } from "../../../lib/helpers/apiResp";
 import { scryptVerify } from "../../../lib/helpers/scrypt";
+import { bodyValidator } from "../../../lib/middleware/reqValidator";
 import { LoginReq } from "../../../lib/requests/login";
 
 const ERR_INVALID_CRED = errResp(401, "Invalid Credentials");
@@ -25,3 +26,5 @@ async function handler(_: NextApiRequest, res: NextApiResponse, loginR: LoginReq
     const token = await authRepo.generateToken({ userId: user.id, nonce: user.nonce });
     return expressRes(res, right({ token }));
 }
+
+export default bodyValidator(LoginReq, handler);
