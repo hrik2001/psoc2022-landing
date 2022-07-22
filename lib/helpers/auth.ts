@@ -24,5 +24,7 @@ export const getAuthUser = async (req: NextApiRequest) => {
         return left(ERR_USER_NF);
     }
 
+    if (user.nonce != payload.value.nonce) return left(ERR_INVALID_TOKEN);
+
     return right(user);
 }
