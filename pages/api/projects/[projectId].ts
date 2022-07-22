@@ -8,7 +8,7 @@ import { ProjectReq } from "../../../lib/requests/project";
 
 const ERR_PROJECT_NF = errResp(404, "Project Not Found");
 
-async function handler(req: NextApiRequest, res: NextApiResponse, { projectId }: ProjectReq) {
+async function handler(_: NextApiRequest, res: NextApiResponse, { projectId }: ProjectReq) {
     const project = await prisma.project.findUnique({
         select: PROJECT_SELECT,
         where: {

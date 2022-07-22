@@ -49,6 +49,7 @@ export const getProjects = async (req: NextApiRequest, res: NextApiResponse, cur
 
     const query = {
         take: PAGE_SIZE,
+        skip: cursor ? 1 : 0,
         select: PROJECT_SELECT, 
         where: {
             NOT: {
