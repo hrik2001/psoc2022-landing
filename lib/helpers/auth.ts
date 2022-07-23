@@ -1,4 +1,5 @@
-import { left, right } from "fp-ts/lib/Either";
+import { flatten, isLeft, left, map, right } from "fp-ts/lib/Either";
+import { pipe } from "fp-ts/lib/function";
 import { isNone } from "fp-ts/lib/Option";
 import { NextApiRequest } from "next";
 import authRepo from "../deps/auth";
@@ -10,7 +11,10 @@ const ERR_AUTH_HEADER_MISSING = errResp(401, "Authorization header is missing");
 const ERR_INVALID_TOKEN = errResp(401, "Invalid Token");
 const ERR_USER_NF = errResp(500, "User Not Found");
 
-export const getAuthUser = async (req: NextApiRequest) => {
+type IncludeParams = Parameters<typeof prisma.user.findUnique>[0]["include"] | undefined;
+type UndefIfUnk<T> = unknown extends T ? undefined : T
+
+export const getAuthUserInner = async <T extends IncludeParams>(req: NextApiRequest, include: T) => {
     const bearer = req.headers.authorization;
     if (!bearer || !bearer.startsWith("Bearer ")) return left(ERR_AUTH_HEADER_MISSING);
 
@@ -18,7 +22,7 @@ export const getAuthUser = async (req: NextApiRequest) => {
     const payload = await authRepo.verify(token);
     if (isNone(payload)) return left(ERR_INVALID_TOKEN);
 
-    const user = await prisma.user.findUnique({ where: { id: payload.value.userId } });
+    const user = await prisma.user.findUnique({ where: { id: payload.value.userId }, include });
     if (!user) {
         logger.crit("possible private key leak! recv invalid token", token);
         return left(ERR_USER_NF);
@@ -28,3 +32,5 @@ export const getAuthUser = async (req: NextApiRequest) => {
 
     return right(user);
 }
+
+export const getAuthUser = <T extends IncludeParams>(req: NextApiRequest, include?: T) => getAuthUserInner(req, include as UndefIfUnk<T>);
