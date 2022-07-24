@@ -11,15 +11,21 @@ function Hero() {
         <div className={styles.introtxt}>
           <h1>PClub Summer Of Code</h1>
           <p>Your first open source contribution is on us.</p>
-          {/* <form action="submit">
+          {/*<form action="submit">
                         <input type="email" placeholder='Enter your Email' required />
-                    <form onSubmit={submission} action="submit">
-                        <input  type="email" ref={emailInput} placeholder='Enter your Email' required />
-                        <button type="submit">GO!</button>
-                    </form> */}
+                        <form onSubmit={submission} action="submit">
+                            <input  type="email" ref={emailInput} placeholder='Enter your Email' required />
+                            <button type="submit">GO!</button>
+                        </form>
+                  </form>*/}
           <p className={styles.link}>
             <Link href={"https://forms.gle/6cDtKm9gCoRFMVwA6"} passHref>
               Mentee Registration
+            </Link>
+          </p>
+          <p className={styles.link}>
+            <Link href={"/login"} passHref>
+              Login Mentee/Mentor
             </Link>
           </p>
           {/* <p className={styles.linkSubtle}>

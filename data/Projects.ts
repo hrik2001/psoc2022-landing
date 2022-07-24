@@ -1,5 +1,6 @@
 const projects: ProjectsProps[] = [
   {
+    id:"p1",
     src: "https://github.com/hrik2001/answer",
     img: "/logo/answer.svg",
     name: "!answer",
@@ -8,6 +9,7 @@ const projects: ProjectsProps[] = [
   },
 
   {
+    id:"p2",
     src: "https://github.com/aryan-basu/Pclub-Meet",
     img: "/logo/pmeet.png",
     name: "PClub Meet",
@@ -15,6 +17,7 @@ const projects: ProjectsProps[] = [
   },
 
   {
+    id:"p3",
     src: "https://github.com/Ayush7614/Bundli-Frontend#bundli-frontend",
     img: "/logo/bundi.png",
     name: "Bundli Frontend",
@@ -23,6 +26,7 @@ const projects: ProjectsProps[] = [
   },
 
   {
+    id:"p4",
     src: "https://github.com/pankajkumarbij/easy-job-intern",
     img: "/logo/easyjobintern.png",
     name: "Easy Job Intern",
