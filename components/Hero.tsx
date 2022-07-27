@@ -19,7 +19,7 @@ function Hero() {
                         </form>
                   </form>*/}
           <p className={styles.link}>
-            <Link href={"https://forms.gle/6cDtKm9gCoRFMVwA6"} passHref>
+            <Link href={"/register"} passHref>
               Mentee Registration
             </Link>
           </p>

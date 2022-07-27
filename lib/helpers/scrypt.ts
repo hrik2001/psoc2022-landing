@@ -9,3 +9,11 @@ export function scryptVerify(password: string, hash: string): Promise<boolean> {
         });
     });
 }
+
+export function scryptHash(password: string): Promise<string> {
+    const salt = crypto.randomBytes(16).toString("hex");
+    return new Promise((res, rej) => crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+        if (err) rej(err);
+        res(`${salt}:${derivedKey.toString("hex")}`);
+    }))
+}

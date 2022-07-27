@@ -13,11 +13,19 @@ const AuthJwtPayload = t.type({
 
 export type AuthJwtPayload = t.TypeOf<typeof AuthJwtPayload>;
 
-export function tokenAuthRepoJwt(privKey: jose.KeyLike | Uint8Array) {
+export function tokenAuthRepoJwt(privKeyJson: Record<any, any>) {
+    let _privKey: jose.KeyLike | Uint8Array | undefined;
+    async function privKey() {
+        if (!_privKey)
+            _privKey = await jose.importJWK(privKeyJson, "ES256");
+
+        return _privKey;
+    }
+
     return {
         async verify(token: string): Promise<Option<AuthJwtPayload>> {
             try {
-                const { payload } = await jose.jwtVerify(token, privKey);
+                const { payload } = await jose.jwtVerify(token, await privKey());
                 return pipe(
                     AuthJwtPayload.decode(payload),
                     fromEither
@@ -30,7 +38,7 @@ export function tokenAuthRepoJwt(privKey: jose.KeyLike | Uint8Array) {
                 .setProtectedHeader({ alg: "ES256" })
                 .setIssuedAt()
                 .setExpirationTime(TOKEN_EXPIRY)
-                .sign(privKey)
+                .sign(await privKey())
         }
     }
 }
