@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../data/Projects";
 import styles from "../styles/Project.module.scss";
+import Link from "next/link";
 
 const isLetter = (c: String) => {
   return c.toLowerCase() != c.toUpperCase();
@@ -33,7 +34,7 @@ const ProjectSection = () => {
           {projects.map((item: ProjectsProps, index) => {
             return (
               <figure key={index}>
-                <a href={item.src}>
+                  <a href={`/projects/${encodeURIComponent(item.id)}`}>
                   <div
                     className={
                       item.img ? styles.projectImgContainer : styles.projectInitialContainer
@@ -47,6 +48,11 @@ const ProjectSection = () => {
               </figure>
             );
           })}
+  <p className={styles.link}>
+    <Link href={"/projects"} passHref>
+      All Projects
+    </Link>
+  </p>
         </div>
       </div>
     </section>
