@@ -13,6 +13,7 @@ export const PROJECT_SELECT =  {
     name: true,
     url: true,
     description: true,
+    logo: true,
     // HADOKEN
     mentor: {
         include: {
@@ -29,16 +30,18 @@ type ProjectRes = {
     id: string;
     name: string;
     url: string;
+    logo: string;
     description: string;
     mentorName: string;
 }
 
-export function projectToDomain(model: { id: string, name: string, url: string, description: string, mentor: { user: { name: string }} }): ProjectRes {
+export function projectToDomain(model: { id: string, name: string, url: string, description: string, logo: string, mentor: { user: { name: string }} }): ProjectRes {
     return {
         id: model.id,
         name: model.name,
         url: model.url,
         description: model.description,
+        logo: model.logo,
         mentorName: model.mentor.user.name
     }
 }
@@ -49,18 +52,16 @@ export const getProjects = async (req: NextApiRequest, res: NextApiResponse, cur
 
     const query = {
         take: PAGE_SIZE,
-        skip: cursor ? 1 : 0,
+        skip: typeof cursor == "string" ? 1 : 0,
         select: PROJECT_SELECT, 
         where: {
-            NOT: {
-                appliedMenteeIds: {
-                        has: user.right.id
-                }
+            appliedMentees: {
+                none: { id: user.right.id }
             }
         },
-        cursor: {
+        cursor: cursor ? {
             id: cursor
-        }
+        } : undefined
     }
 
     const projects = await prisma.project.findMany(query);

@@ -6,7 +6,7 @@ import { errResp, expressRes, expressUnwrappErr } from "../../../lib/helpers/api
 import { queryValidator } from "../../../lib/middleware/reqValidator";
 import { ProjectReq } from "../../../lib/requests/project";
 
-const ERR_PROJECT_NF = errResp(404, "Project Not Found");
+export const ERR_PROJECT_NF = errResp(404, "Project Not Found");
 
 async function handler(_: NextApiRequest, res: NextApiResponse, { projectId }: ProjectReq) {
     const project = await prisma.project.findUnique({

@@ -14,8 +14,10 @@ function Login() {
       try {
         const config = {headers:{"Content-type": "application/json",},};
         const { data } = await axios.post("/api/auth/login",{email,password},config);
+        console.log(data);
         const token = data.data.token;
-                console.log(token);
+        console.log(token);
+        localStorage.setItem("userToken",JSON.stringify(token));
         router.push("/dashboard");
       } catch (error) {
         console.log(error);

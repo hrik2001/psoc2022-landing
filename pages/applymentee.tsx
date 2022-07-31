@@ -1,20 +1,19 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import ApplyMentee from "../components/ApplyMentee";
 
-function dashboard() {
-
+function applymentee() {
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Apply Mentee</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <Dashboard />
+      <ApplyMentee />
     </div>
   );
 }
 
-export default dashboard;
+export default applymentee;

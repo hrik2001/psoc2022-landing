@@ -4,6 +4,7 @@ import Login from "../components/Login";
 import Navbar from "../components/Navbar";
 
 function login() {
+
   return (
     <div>
       <Head>

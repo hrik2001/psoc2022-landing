@@ -9,36 +9,38 @@ import { ApplyProjectReq } from "../../../lib/requests/applyProject";
 
 export const ERR_NOT_MENTEE = errResp(403, "Mentee Access Required");
 export const ERR_PROJECT_FINALIZED = errResp(400, "Project is finalized");
+export const ERR_PROJECT_NF = errResp(404, "Project Not Found")
 export const ERR_ALREADY_APPLIED = errResp(400, "Already Applied");
 
-async function handler(req: NextApiRequest, res: NextApiResponse, { projectId }: ApplyProjectReq) {
+async function handler(req: NextApiRequest, res: NextApiResponse, { projectId, application }: ApplyProjectReq) {
     const user = await getAuthUser(req, { mentee: { select: { id: true, finalizedProjectId: true } } });
     if (isLeft(user)) return expressUnwrappErr(res, user);
     if (user.right.role != Role.MENTEE) return expressUnwrappErr(res, left(ERR_NOT_MENTEE));
     if (user.right.mentee?.finalizedProjectId) return expressUnwrappErr(res, left(ERR_PROJECT_FINALIZED));
 
-    const menteeInfo = await prisma.mentee.updateMany({
+    const project = await prisma.project.findFirst({ where: { id: projectId }, include: { finalizedMentees: { select: { id: true } } } });
+    if (!project) return expressUnwrappErr(res, left(ERR_PROJECT_NF)); 
+    if (project.appliedMenteeIds.some((v) => v == user.right.mentee!.id) ||
+        project.menteeIds.some((v) => v == user.right.mentee!.id) ||
+        project.finalizedMentees.some((v) => v.id == user.right.mentee!.id))
+        return expressUnwrappErr(res, left(ERR_ALREADY_APPLIED));
+
+    const projInfo = await prisma.project.update({
         where: {
-            userId: user.right.id,
-            availableProjects: {
-                none: {
-                    id: projectId
-                }
-            },
-            appliedProjects: {
-                none: {
-                    id: projectId
-                }
-            }
+            id: projectId
         },
         data: {
-            appliedProjectIds:{
-                push: projectId
+            appliedMentees: {
+                connect: { id: user.right.mentee!.id }
+            },
+            applications: {
+                push: {
+                    menteeId: user.right.mentee!.id,
+                    application
+                } 
             }
         }
     });
-
-    if (menteeInfo.count == 0) return expressUnwrappErr(res, left(ERR_ALREADY_APPLIED));
 
     return expressRes(res, right("applied"));
 }

@@ -3,6 +3,7 @@
 import { Role } from "@prisma/client";
 import { right } from "fp-ts/lib/Either";
 import { NextApiRequest, NextApiResponse } from "next";
+import authRepo from "../../../lib/deps/auth";
 import prisma from "../../../lib/deps/prisma";
 import { expressRes } from "../../../lib/helpers/apiResp";
 import { scryptHash } from "../../../lib/helpers/scrypt";
@@ -21,7 +22,7 @@ async function handler(_: NextApiRequest, res: NextApiResponse, user: RegisterRe
         mentor = { create: {} };
         role = Role.MENTOR;
     }
-    await prisma.user.create({
+    const newUser = await prisma.user.create({
         data: {
             name: user.name,
             email: user.email,
@@ -33,7 +34,19 @@ async function handler(_: NextApiRequest, res: NextApiResponse, user: RegisterRe
         }
     });
 
-    return expressRes(res, right("created"))
+    const token = await authRepo.generateToken({
+        userId: newUser.id,
+        nonce: 0
+    });
+
+    return expressRes(res, right({
+        user_info: {
+            name: user.name,
+            email: user.email,
+            role: user.role.toUpperCase(),
+        },
+        token
+    }))
 }
 
 export default bodyValidator(RegisterReq, handler);

@@ -5,7 +5,7 @@
   "scripts": {
     "next:lint": "next lint",
     "next:build": "next build",
-    "prisma:lint": "prisma lint",
+    "prisma:lint": "prisma format",
     "prisma:generate": "prisma generate",
     "dev": "next dev",
     "build": "npm run prisma:generate && npm run next:build",
@@ -16,7 +16,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.6.3",
-    "@prisma/client": "^4.1.0",
+    "@prisma/client": "^4.1.1",
     "axios": "^0.27.2",
     "fp-ts": "^2.12.1",
     "io-ts": "^2.2.16",
@@ -34,7 +34,7 @@
     "@types/react-dom": "18.0.0",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
-    "prisma": "^4.1.0",
+    "prisma": "^4.1.1",
     "typescript": "4.6.3"
   }
 }

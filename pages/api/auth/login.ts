@@ -14,7 +14,10 @@ async function handler(_: NextApiRequest, res: NextApiResponse, loginR: LoginReq
         select: {
             id: true,
             password: true,
-            nonce: true
+            nonce: true,
+            name: true,
+            email: true,
+            role: true
         },
         where: {
             email: loginR.email
@@ -24,7 +27,14 @@ async function handler(_: NextApiRequest, res: NextApiResponse, loginR: LoginReq
     if (!await scryptVerify(loginR.password, user.password)) return expressUnwrappErr(res, left(ERR_INVALID_CRED));
 
     const token = await authRepo.generateToken({ userId: user.id, nonce: user.nonce });
-    return expressRes(res, right({ token }));
+    return expressRes(res, right({
+        token,
+        user_info: {
+            name: user.name,
+            email: user.email,
+            role: user.role
+        }
+    }));
 }
 
 export default bodyValidator(LoginReq, handler);

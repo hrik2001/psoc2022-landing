@@ -1,20 +1,20 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import MenteeDashboard from "../components/MenteeDashboard";
 
-function dashboard() {
+function menteedashboard() {
 
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Mentee Dashboard</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <Dashboard />
+      <MenteeDashboard />
     </div>
   );
 }
 
-export default dashboard;
+export default menteedashboard;

@@ -1,20 +1,20 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import ApprovedMentee from "../components/ApprovedMentee";
 
-function dashboard() {
+function approvedmentee() {
 
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Approved Mentee</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <Dashboard />
+      <ApprovedMentee />
     </div>
   );
 }
 
-export default dashboard;
+export default approvedmentee;

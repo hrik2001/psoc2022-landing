@@ -17,7 +17,11 @@ function Register() {
       try {
         const config = {headers:{"Content-type": "application/json",},};
         const { data } = await axios.post("/api/auth/register",{name,email,password,role},config);
+        localStorage.removeItem("userToken");
         console.log(data);
+        const token = data.data.token;
+        console.log(token);
+        localStorage.setItem("userToken",JSON.stringify(token));
         router.push("/dashboard")
       } catch (error) {
         console.log(error);

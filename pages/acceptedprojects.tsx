@@ -1,20 +1,20 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import AcceptedProjects from "../components/AcceptedProjects";
 
-function dashboard() {
+function acceptedprojects() {
 
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Accepted Projects</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <Dashboard />
+      <AcceptedProjects />
     </div>
   );
 }
 
-export default dashboard;
+export default acceptedprojects;
