@@ -22,7 +22,7 @@ const submitHandler = async() => {
     const config = {headers:{"Content-type": "application/json",Authorization: `Bearer ${userToken}`,},};
     const { data } = await axios.post("/api/mentee/apply-project",{application,projectId},config);
     console.log(data);
-    router.push("/appliedprojects");
+    router.push("/menteedashboard");
   } catch (error) {
     console.log(error);
   }
