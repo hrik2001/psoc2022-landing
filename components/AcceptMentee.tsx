@@ -41,7 +41,7 @@ function AcceptMentee(props) {
       const { data } = await axios.post("/api/mentor/accept-mentee",{projectId,menteeId},config);
       console.log(data);
       console.log(menteeId);
-      router.push("/approvedmentee");
+      router.push("/menteedashboard");
     } catch (error) {
       console.log(error);
     }
