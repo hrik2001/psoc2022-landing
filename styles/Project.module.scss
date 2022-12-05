@@ -28,10 +28,10 @@ $lightBlue : #3192CA;
     background-color: #24487E;
     flex-basis: 60%;
     padding: 2rem;
-    
+
     figure {
         margin: auto;
-    }    
+    }
 }
 
 .projectContainer{
@@ -42,6 +42,25 @@ $lightBlue : #3192CA;
     text-align: center;
     // justify-content: center;
     // align-items: center;
+    p{
+        font-size: clamp(1rem,2.5vw,1.5rem);
+    }
+    .link{
+        background-color: #1de235;
+        width: 10rem;;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 2px 2px 10px 5px #0000001a;
+        }
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 20rem;
+    }
+
+
 }
 
 .projectInitialContainer{
@@ -80,11 +99,11 @@ $lightBlue : #3192CA;
     .projectSection {
         flex-direction: column;
     }
-    
+
     .projectHeading {
         font-size: 2rem;
     }
-    
+
     .projectContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -94,7 +113,7 @@ $lightBlue : #3192CA;
         // justify-content: center;
         // align-items: center;
     }
-    
+
     .projectInitialContainer {
         padding: 1rem;
         font-size: 3rem;

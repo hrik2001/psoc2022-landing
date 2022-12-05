@@ -1,0 +1,68 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGO_URL")
+}
+
+model User {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  email    String  @unique
+  // SCRYPT hash
+  password String
+  nonce    Int
+  role     Role
+  mentee   Mentee?
+  mentor   Mentor?
+}
+
+model Mentee {
+  id                 String    @id @default(auto()) @map("_id") @db.ObjectId
+  user               User      @relation(fields: [userId], references: [id])
+  userId             String    @unique @db.ObjectId
+  appliedProjects    Project[] @relation("applied", fields: [appliedProjectIds], references: [id])
+  appliedProjectIds  String[]  @db.ObjectId
+  availableProjects  Project[] @relation("available", fields: [projectIds], references: [id])
+  projectIds         String[]  @db.ObjectId
+  finalizedProject   Project?  @relation(fields: [finalizedProjectId], references: [id])
+  finalizedProjectId String?   @db.ObjectId
+}
+
+model Mentor {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  user     User      @relation(fields: [userId], references: [id])
+  userId   String    @unique @db.ObjectId
+  projects Project[]
+}
+
+type ProjectApplications {
+  menteeId      String @db.ObjectId
+  application String
+}
+
+model Project {
+  id               String                @id @default(auto()) @map("_id") @db.ObjectId
+  name             String
+  url              String
+  description      String
+  logo             String
+  mentor           Mentor                @relation(fields: [mentorId], references: [id])
+  mentorId         String                @db.ObjectId
+  appliedMentees   Mentee[]              @relation("applied", fields: [appliedMenteeIds], references: [id])
+  appliedMenteeIds String[]              @db.ObjectId
+  applications     ProjectApplications[]
+  selectedMentees  Mentee[]              @relation("available", fields: [menteeIds], references: [id])
+  menteeIds        String[]              @db.ObjectId
+  finalizedMentees Mentee[]
+}
+
+enum Role {
+  MENTOR
+  MENTEE
+}

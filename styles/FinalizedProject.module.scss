@@ -1,0 +1,178 @@
+.container{
+    height:100vh;
+    background: linear-gradient(0.5deg, #3192CA 12.81%, #24487E 59.29%);
+    box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.introContainer{
+    display: flex;
+    padding: 15vh 18vw;
+    color: #ffffff;
+    .introtxt{
+      flex-shrink: 1;
+      $lightBlueText : #246D96;
+      $lightBlue :#E8F2F6;
+      $darkBlue : #24487E;
+      $linkBlue : #3192CA;
+
+      .dashboard{
+        background-color: #1de235;
+        width: fit-content;
+        padding: 1rem;
+        margin: 4rem 25rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 2px 2px 10px 5px #0000001a;
+        }
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      .projectSection{
+          height: max-content;
+          overflow: auto;
+
+          section{
+              width: 80%;
+              margin :5rem auto;
+          }
+
+      }
+      .projectHeading{
+          font-size: 3.775rem;
+          color:$darkBlue;
+          margin:2rem auto 4rem;
+          text-align: center;
+          font-weight: 600;
+      }
+
+      .projectCardContainer{
+              display: flex;
+              flex-direction: row;
+              // justify-content: space-between;
+              justify-content: space-around;
+              margin:"1rem auto";
+              flex-wrap: wrap;
+              gap: 2rem;
+      }
+
+      .projectCard {
+        cursor: pointer;
+          background-color: #fff;
+          border-radius: 22px;
+          padding: 2rem;
+          // max-width: 350px;
+          max-width: clamp(200px,25rem,350px);
+          // flex-basis: 30%;
+          // flex-shrink: 2;
+          transition: all 1s ease;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+          h4{
+              transition: all 0.2s ease;
+              color: $darkBlue;
+              font-size: 2rem;
+              font-weight: 300;
+              margin-bottom: 1rem;
+              margin-left: 2.5rem;
+          }
+
+          p{
+              color : $lightBlueText;
+              font-size: 1.5rem;
+              font-weight: 400;
+              letter-spacing: 0.15px;
+              margin: 0rem 2.5rem;
+          }
+
+      }
+
+      .projectCard:hover{
+          transform: scale(1.1);
+          h4{
+              font-weight: 700;
+          }
+      }
+
+      .projectCardImageContainer {
+          width: 80px;
+          min-width: 50px;
+          color: $darkBlue;
+
+          img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              margin: 1rem 2.5rem;
+          }
+      }
+      .projectLink {
+          color : $linkBlue;
+          text-decoration: underline;
+          text-transform: capitalize;
+          font-weight: 600;
+          margin:2rem 0 1rem;
+          display: block;
+          font-size: 1.5rem;
+      }
+      @media all and (max-width : 1400px){
+
+          .projectSection {
+
+              section{
+                  width: 90%;
+              }
+          }
+
+          .projectCardContainer {
+              // justify-content: center;
+          }
+
+          .projectCard{
+              h4{
+                  font-size: 1.5rem;
+              }
+
+              p{
+                  font-size: 1rem;
+              }
+          }
+      }
+        h1{
+          font-size: clamp(4rem, 10vw, 6rem);
+          line-height: clamp(4.5rem,13.33vw,8rem);
+          margin-left: 10rem;
+        }
+        p{
+            font-size: clamp(1rem,2.5vw,1.5rem);
+        }
+        .project{
+          display: flex;
+          justify-content: center;
+          font-size: clamp(4rem, 5vw, 4rem);
+          line-height: clamp(4.5rem,13.33vw,8rem);
+        }
+        .link{
+            background-color: #1de235;
+            width: fit-content;
+            padding: 1rem;
+            margin: 4rem 22rem;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 2px 2px 10px 5px #0000001a;
+            }
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+}

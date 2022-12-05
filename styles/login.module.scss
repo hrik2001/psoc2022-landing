@@ -1,0 +1,35 @@
+.container{
+    height:100vh;
+    background: linear-gradient(0.5deg, #3192CA 12.81%, #24487E 59.29%);
+    box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.inputs{
+  margin: 7rem 35rem;
+  .form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 16rem;
+      height: 10rem;
+
+      button{
+          color:#fff;
+          background-color: #52d575;
+          border: none;
+          cursor: pointer;
+          border-radius: 12px;
+          width:10rem;
+          margin-top: 1rem;
+          margin-left: 6rem;
+      }
+      input{
+          padding-left: 7rem;
+          border: none;
+          border-radius: 12px;
+          width:clamp(250px, 35vw, 350px);
+          height: 30px;
+          margin-top: 18px;
+      }
+  }
+}
